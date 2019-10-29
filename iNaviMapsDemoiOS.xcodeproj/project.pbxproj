@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74FF9E1C23447B9E001E94B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0023447B9E001E94B2 /* AppDelegate.swift */; };
+		74FF9E1D23447B9E001E94B2 /* UIActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0223447B9E001E94B2 /* UIActionButton.swift */; };
+		74FF9E1E23447B9E001E94B2 /* UIInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */; };
+		74FF9E1F23447B9E001E94B2 /* CustomInfoWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */; };
+		74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */; };
+		74FF9E2123447B9E001E94B2 /* CameraFitBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */; };
+		74FF9E2223447B9E001E94B2 /* CameraMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */; };
+		74FF9E2323447B9E001E94B2 /* GlobalZIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */; };
+		74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */; };
+		74FF9E2523447B9E001E94B2 /* INVCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */; };
+		74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */; };
+		74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */; };
+		74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */; };
+		74FF9E2923447B9E001E94B2 /* INVMultiLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */; };
+		74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */; };
+		74FF9E2B23447B9E001E94B2 /* INVPolylineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */; };
+		74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1323447B9E001E94B2 /* MainViewController.swift */; };
+		74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */; };
+		74FF9E2E23447B9E001E94B2 /* MapControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */; };
+		74FF9E2F23447B9E001E94B2 /* MapGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */; };
+		74FF9E3023447B9E001E94B2 /* MapPaddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */; };
+		74FF9E3123447B9E001E94B2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1823447B9E001E94B2 /* MapViewController.swift */; };
+		74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */; };
+		74FF9E3323447B9E001E94B2 /* ShapeClickEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */; };
+		74FF9E3423447B9E001E94B2 /* UserTrackingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */; };
+		74FF9E4023447BD6001E94B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */; };
+		74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3823447BD6001E94B2 /* Main.storyboard */; };
+		74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3A23447BD6001E94B2 /* Camera.storyboard */; };
+		74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */; };
+		74FF9E4423447BD6001E94B2 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3C23447BD6001E94B2 /* Location.storyboard */; };
+		74FF9E4523447BD6001E94B2 /* MapOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */; };
+		74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3E23447BD6001E94B2 /* Misc.storyboard */; };
+		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
+		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
+		E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.release.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.release.xcconfig"; sourceTree = "<group>"; };
+		420718C55FFCC104EF22E64F /* Pods-inaviMapsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.debug.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.debug.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNaviMapsDemoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FF9E0023447B9E001E94B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74FF9E0223447B9E001E94B2 /* UIActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActionButton.swift; sourceTree = "<group>"; };
+		74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInsetLabel.swift; sourceTree = "<group>"; };
+		74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoWindowView.xib; sourceTree = "<group>"; };
+		74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraEventViewController.swift; sourceTree = "<group>"; };
+		74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFitBoundsViewController.swift; sourceTree = "<group>"; };
+		74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMoveViewController.swift; sourceTree = "<group>"; };
+		74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalZIndexViewController.swift; sourceTree = "<group>"; };
+		74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVCameraUpdateParamsViewController.swift; sourceTree = "<group>"; };
+		74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVCircleViewController.swift; sourceTree = "<group>"; };
+		74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVInfoWindowViewController.swift; sourceTree = "<group>"; };
+		74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerOverlapViewController.swift; sourceTree = "<group>"; };
+		74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerViewController.swift; sourceTree = "<group>"; };
+		74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMultiLineViewController.swift; sourceTree = "<group>"; };
+		74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolygonViewController.swift; sourceTree = "<group>"; };
+		74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolylineViewController.swift; sourceTree = "<group>"; };
+		74FF9E1323447B9E001E94B2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapClickEventViewController.swift; sourceTree = "<group>"; };
+		74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapControllerViewController.swift; sourceTree = "<group>"; };
+		74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapGestureViewController.swift; sourceTree = "<group>"; };
+		74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPaddingViewController.swift; sourceTree = "<group>"; };
+		74FF9E1823447B9E001E94B2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionViewController.swift; sourceTree = "<group>"; };
+		74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeClickEventViewController.swift; sourceTree = "<group>"; };
+		74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTrackingModeViewController.swift; sourceTree = "<group>"; };
+		74FF9E3723447BD6001E94B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74FF9E3923447BD6001E94B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74FF9E3A23447BD6001E94B2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClickEvent.storyboard; sourceTree = "<group>"; };
+		74FF9E3C23447BD6001E94B2 /* Location.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapOptions.storyboard; sourceTree = "<group>"; };
+		74FF9E3E23447BD6001E94B2 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
+		74FF9E3F23447BD6001E94B2 /* Shape.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shape.storyboard; sourceTree = "<group>"; };
+		7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
+		8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNaviMapsDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADAD77322D42A9D00782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ADAD77822D42A9D00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ADAD76622D42A9C00782103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74FF9DFF23447B9E001E94B2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0023447B9E001E94B2 /* AppDelegate.swift */,
+				74FF9E0123447B9E001E94B2 /* UI Extensions */,
+				74FF9E0423447B9E001E94B2 /* View */,
+				74FF9E0623447B9E001E94B2 /* ViewController */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		74FF9E0123447B9E001E94B2 /* UI Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0223447B9E001E94B2 /* UIActionButton.swift */,
+				74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */,
+			);
+			path = "UI Extensions";
+			sourceTree = "<group>";
+		};
+		74FF9E0423447B9E001E94B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74FF9E0623447B9E001E94B2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */,
+				74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */,
+				74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */,
+				74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */,
+				74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */,
+				74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */,
+				74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */,
+				74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */,
+				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
+				74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */,
+				74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */,
+				74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */,
+				74FF9E1323447B9E001E94B2 /* MainViewController.swift */,
+				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
+				74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */,
+				74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */,
+				74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */,
+				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
+				74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */,
+				74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */,
+				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		74FF9E3523447BD6001E94B2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */,
+				74FF9E3823447BD6001E94B2 /* Main.storyboard */,
+				74FF9E3A23447BD6001E94B2 /* Camera.storyboard */,
+				74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */,
+				74FF9E3C23447BD6001E94B2 /* Location.storyboard */,
+				74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */,
+				74FF9E3E23447BD6001E94B2 /* Misc.storyboard */,
+				74FF9E3F23447BD6001E94B2 /* Shape.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8ADAD76022D42A9C00782103 = {
+			isa = PBXGroup;
+			children = (
+				8ADAD76B22D42A9C00782103 /* App */,
+				8ADAD76A22D42A9C00782103 /* Products */,
+				8FE2E7896B67EB50583E99DE /* Pods */,
+				F432220A0BF6A2D92BC39C81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8ADAD76A22D42A9C00782103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ADAD76B22D42A9C00782103 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E3523447BD6001E94B2 /* Storyboard */,
+				74FF9DFF23447B9E001E94B2 /* Source */,
+				8ADAD77322D42A9D00782103 /* Assets.xcassets */,
+				8ADAD77822D42A9D00782103 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8FE2E7896B67EB50583E99DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				420718C55FFCC104EF22E64F /* Pods-inaviMapsApp.debug.xcconfig */,
+				116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */,
+				5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */,
+				7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F432220A0BF6A2D92BC39C81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ADAD76822D42A9C00782103 /* iNaviMapsDemoiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemoiOS" */;
+			buildPhases = (
+				ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */,
+				8ADAD76522D42A9C00782103 /* Sources */,
+				8ADAD76622D42A9C00782103 /* Frameworks */,
+				8ADAD76722D42A9C00782103 /* Resources */,
+				14F1C038B5249289A557A111 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iNaviMapsDemoiOS;
+			productName = inaviMapsApp;
+			productReference = 8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ADAD76122D42A9C00782103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "DAECHEOL KIM";
+				TargetAttributes = {
+					8ADAD76822D42A9C00782103 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemoiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+				Base,
+			);
+			mainGroup = 8ADAD76022D42A9C00782103;
+			productRefGroup = 8ADAD76A22D42A9C00782103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ADAD76822D42A9C00782103 /* iNaviMapsDemoiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ADAD76722D42A9C00782103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */,
+				74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */,
+				74FF9E4023447BD6001E94B2 /* LaunchScreen.storyboard in Resources */,
+				8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */,
+				74FF9E1F23447B9E001E94B2 /* CustomInfoWindowView.xib in Resources */,
+				74FF9E4423447BD6001E94B2 /* Location.storyboard in Resources */,
+				74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */,
+				74FF9E4523447BD6001E94B2 /* MapOptions.storyboard in Resources */,
+				74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */,
+				74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F1C038B5249289A557A111 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iNaviMapsDemoiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ADAD76522D42A9C00782103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74FF9E2B23447B9E001E94B2 /* INVPolylineViewController.swift in Sources */,
+				74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */,
+				74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */,
+				74FF9E3323447B9E001E94B2 /* ShapeClickEventViewController.swift in Sources */,
+				74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */,
+				74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */,
+				74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */,
+				74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */,
+				74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */,
+				74FF9E2923447B9E001E94B2 /* INVMultiLineViewController.swift in Sources */,
+				74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */,
+				74FF9E3023447B9E001E94B2 /* MapPaddingViewController.swift in Sources */,
+				74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */,
+				74FF9E3423447B9E001E94B2 /* UserTrackingModeViewController.swift in Sources */,
+				74FF9E1C23447B9E001E94B2 /* AppDelegate.swift in Sources */,
+				74FF9E2E23447B9E001E94B2 /* MapControllerViewController.swift in Sources */,
+				74FF9E3123447B9E001E94B2 /* MapViewController.swift in Sources */,
+				74FF9E2F23447B9E001E94B2 /* MapGestureViewController.swift in Sources */,
+				74FF9E2223447B9E001E94B2 /* CameraMoveViewController.swift in Sources */,
+				74FF9E1D23447B9E001E94B2 /* UIActionButton.swift in Sources */,
+				74FF9E2123447B9E001E94B2 /* CameraFitBoundsViewController.swift in Sources */,
+				74FF9E2523447B9E001E94B2 /* INVCircleViewController.swift in Sources */,
+				74FF9E1E23447B9E001E94B2 /* UIInsetLabel.swift in Sources */,
+				74FF9E2323447B9E001E94B2 /* GlobalZIndexViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74FF9E3723447BD6001E94B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		74FF9E3823447BD6001E94B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74FF9E3923447BD6001E94B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ADAD77922D42A9D00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8ADAD77A22D42A9D00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ADAD77C22D42A9D00782103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M4C5C72YG;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
+				PRODUCT_NAME = iNaviMapsDemoiOS;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ADAD77D22D42A9D00782103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6M4C5C72YG;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
+				PRODUCT_NAME = iNaviMapsDemoiOS;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADAD77922D42A9D00782103 /* Debug */,
+				8ADAD77A22D42A9D00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ADAD77C22D42A9D00782103 /* Debug */,
+				8ADAD77D22D42A9D00782103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ADAD76122D42A9C00782103 /* Project object */;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Projection-->
+        <scene sceneID="YdR-Hw-huk">
+            <objects>
+                <viewController storyboardIdentifier="Projection" title="Projection" id="frb-0o-81G" customClass="ProjectionViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0es-u6-xam">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qol-3T-iml" customClass="InaviMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-xW-MWh" userLabel="InfoView">
+                                <rect key="frame" x="0.0" y="624" width="375" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도상 좌표 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-hJ-Kr8">
+                                        <rect key="frame" x="8" y="37" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면상 좌표 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCZ-Vo-97G">
+                                        <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9AI-hJ-Kr8" firstAttribute="leading" secondItem="mYd-xW-MWh" secondAttribute="leadingMargin" id="AcS-gF-lHE"/>
+                                    <constraint firstItem="9AI-hJ-Kr8" firstAttribute="trailing" secondItem="mYd-xW-MWh" secondAttribute="trailingMargin" id="F0A-OB-n1m"/>
+                                    <constraint firstItem="9AI-hJ-Kr8" firstAttribute="bottom" secondItem="mYd-xW-MWh" secondAttribute="bottomMargin" id="Mju-1O-QHw"/>
+                                    <constraint firstItem="VCZ-Vo-97G" firstAttribute="trailing" secondItem="mYd-xW-MWh" secondAttribute="trailingMargin" id="T27-8l-3oK"/>
+                                    <constraint firstItem="VCZ-Vo-97G" firstAttribute="top" secondItem="mYd-xW-MWh" secondAttribute="topMargin" id="nDH-bh-NIw"/>
+                                    <constraint firstItem="9AI-hJ-Kr8" firstAttribute="top" secondItem="VCZ-Vo-97G" secondAttribute="bottom" constant="8" id="olz-JZ-6jS"/>
+                                    <constraint firstItem="VCZ-Vo-97G" firstAttribute="leading" secondItem="mYd-xW-MWh" secondAttribute="leadingMargin" id="v7r-Tm-QNr"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="DnH-Pn-SdV">
+                                <rect key="frame" x="162.66666666666666" y="287" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g6b-4X-1I5"/>
+                                    <constraint firstAttribute="width" constant="50" id="v3L-No-HvK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mYd-xW-MWh" firstAttribute="leading" secondItem="AIM-zC-PxM" secondAttribute="leading" id="0Rx-GG-9KI"/>
+                            <constraint firstItem="mYd-xW-MWh" firstAttribute="trailing" secondItem="AIM-zC-PxM" secondAttribute="trailing" id="4K7-gG-V6w"/>
+                            <constraint firstItem="DnH-Pn-SdV" firstAttribute="centerX" secondItem="qol-3T-iml" secondAttribute="centerX" id="DVf-4t-uwv"/>
+                            <constraint firstItem="qol-3T-iml" firstAttribute="leading" secondItem="0es-u6-xam" secondAttribute="leading" id="GXT-V8-aOC"/>
+                            <constraint firstItem="qol-3T-iml" firstAttribute="top" secondItem="AIM-zC-PxM" secondAttribute="top" id="WZH-Nt-bPU"/>
+                            <constraint firstItem="qol-3T-iml" firstAttribute="trailing" secondItem="0es-u6-xam" secondAttribute="trailing" id="Wfk-hO-gbX"/>
+                            <constraint firstItem="qol-3T-iml" firstAttribute="bottom" secondItem="mYd-xW-MWh" secondAttribute="top" id="Z0p-NK-F21"/>
+                            <constraint firstItem="mYd-xW-MWh" firstAttribute="bottom" secondItem="AIM-zC-PxM" secondAttribute="bottom" id="oe8-Pg-gdj"/>
+                            <constraint firstItem="DnH-Pn-SdV" firstAttribute="centerY" secondItem="qol-3T-iml" secondAttribute="centerY" id="rE3-qS-eFW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AIM-zC-PxM"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="crossHair" destination="DnH-Pn-SdV" id="Vd9-Va-HL8"/>
+                        <outlet property="mapView" destination="qol-3T-iml" id="yED-7c-jUb"/>
+                        <outlet property="tvLatLng" destination="9AI-hJ-Kr8" id="gl0-uy-IHJ"/>
+                        <outlet property="tvScreenPoint" destination="VCZ-Vo-97G" id="G3C-WX-ZY9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNB-kx-zcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="crosshair" width="52" height="52"/>
+    </resources>
+</document>

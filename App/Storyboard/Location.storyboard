@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Tracking Mode-->
+        <scene sceneID="Fvo-Zf-IKO">
+            <objects>
+                <viewController storyboardIdentifier="UserTrackingMode" title="User Tracking Mode" automaticallyAdjustsScrollViewInsets="NO" id="jHk-iM-DQH" customClass="UserTrackingModeViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rTa-Md-m5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmq-4c-yAg" customClass="InaviMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4w-dO-t9P" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="724" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zf-yO-GeB">
+                                        <rect key="frame" x="134" y="3" width="180" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="0xz-kH-DP8"/>
+                                            <constraint firstAttribute="height" constant="44" id="j2g-0S-PxD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="None">
+                                            <color key="titleShadowColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="respondToUserTrackingMode:" destination="jHk-iM-DQH" eventType="touchUpInside" id="gjD-fr-a3N"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDq-7n-m6n">
+                                        <rect key="frame" x="314" y="3" width="26" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="26" id="2qW-3M-a6a"/>
+                                            <constraint firstAttribute="height" constant="44" id="TIE-3c-0X2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="위치 추적 모드 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa2-nw-bIZ" userLabel="Label">
+                                        <rect key="frame" x="15" y="14.5" width="111" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="dDq-7n-m6n" firstAttribute="centerY" secondItem="E4w-dO-t9P" secondAttribute="centerY" id="3nb-dx-jau"/>
+                                    <constraint firstItem="3zf-yO-GeB" firstAttribute="centerY" secondItem="E4w-dO-t9P" secondAttribute="centerY" id="57h-dQ-CfE"/>
+                                    <constraint firstItem="wa2-nw-bIZ" firstAttribute="leading" secondItem="E4w-dO-t9P" secondAttribute="leading" constant="15" id="AcA-3m-txo"/>
+                                    <constraint firstAttribute="height" constant="50" id="MgH-he-djL"/>
+                                    <constraint firstItem="3zf-yO-GeB" firstAttribute="leading" secondItem="wa2-nw-bIZ" secondAttribute="trailing" constant="8" id="Y8j-qU-Ymu"/>
+                                    <constraint firstItem="wa2-nw-bIZ" firstAttribute="centerY" secondItem="E4w-dO-t9P" secondAttribute="centerY" id="hSr-ZA-k8R"/>
+                                    <constraint firstItem="dDq-7n-m6n" firstAttribute="leading" secondItem="3zf-yO-GeB" secondAttribute="trailing" id="rJE-b4-6zv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jmq-4c-yAg" firstAttribute="bottom" secondItem="E4w-dO-t9P" secondAttribute="top" id="2An-ss-3mv"/>
+                            <constraint firstItem="jmq-4c-yAg" firstAttribute="trailing" secondItem="rTa-Md-m5r" secondAttribute="trailing" id="4cs-zm-aN0"/>
+                            <constraint firstItem="KSu-Q6-aTz" firstAttribute="bottom" secondItem="E4w-dO-t9P" secondAttribute="bottom" id="eKa-8Q-rNy"/>
+                            <constraint firstItem="E4w-dO-t9P" firstAttribute="trailing" secondItem="rTa-Md-m5r" secondAttribute="trailing" id="eTV-e2-rd9"/>
+                            <constraint firstItem="E4w-dO-t9P" firstAttribute="leading" secondItem="rTa-Md-m5r" secondAttribute="leading" id="zAN-ub-oaO"/>
+                            <constraint firstItem="jmq-4c-yAg" firstAttribute="top" secondItem="KSu-Q6-aTz" secondAttribute="top" id="zDn-bb-2Ef"/>
+                            <constraint firstItem="jmq-4c-yAg" firstAttribute="leading" secondItem="rTa-Md-m5r" secondAttribute="leading" id="zKJ-my-mbe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KSu-Q6-aTz"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="jmq-4c-yAg" id="wWj-r7-9cC"/>
+                        <outlet property="selectButton" destination="3zf-yO-GeB" id="9Aa-ur-FEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9O-In-aNO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4386" y="-1012"/>
+        </scene>
+    </scenes>
+</document>
