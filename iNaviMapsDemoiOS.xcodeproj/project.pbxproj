@@ -21,7 +21,6 @@
 		74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */; };
 		74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */; };
 		74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */; };
-		74FF9E2923447B9E001E94B2 /* INVMultiLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */; };
 		74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */; };
 		74FF9E2B23447B9E001E94B2 /* INVPolylineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */; };
 		74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1323447B9E001E94B2 /* MainViewController.swift */; };
@@ -42,6 +41,7 @@
 		74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3E23447BD6001E94B2 /* Misc.storyboard */; };
 		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
 		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
+		D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */; };
 		E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,6 @@
 		74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVInfoWindowViewController.swift; sourceTree = "<group>"; };
 		74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerOverlapViewController.swift; sourceTree = "<group>"; };
 		74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerViewController.swift; sourceTree = "<group>"; };
-		74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMultiLineViewController.swift; sourceTree = "<group>"; };
 		74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolygonViewController.swift; sourceTree = "<group>"; };
 		74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolylineViewController.swift; sourceTree = "<group>"; };
 		74FF9E1323447B9E001E94B2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +87,7 @@
 		8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNaviMapsDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADAD77322D42A9D00782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADAD77822D42A9D00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVRouteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +142,9 @@
 				74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */,
 				74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */,
 				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
-				74FF9E1023447B9E001E94B2 /* INVMultiLineViewController.swift */,
 				74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */,
 				74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */,
+				D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */,
 				74FF9E1323447B9E001E94B2 /* MainViewController.swift */,
 				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
 				74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */,
@@ -349,12 +349,12 @@
 				74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */,
 				74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */,
 				74FF9E3323447B9E001E94B2 /* ShapeClickEventViewController.swift in Sources */,
+				D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */,
 				74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */,
 				74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */,
 				74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */,
 				74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */,
 				74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */,
-				74FF9E2923447B9E001E94B2 /* INVMultiLineViewController.swift in Sources */,
 				74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */,
 				74FF9E3023447B9E001E94B2 /* MapPaddingViewController.swift in Sources */,
 				74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */,
@@ -517,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -525,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemoiOS;
 				SWIFT_VERSION = 5.0;
@@ -539,7 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -547,7 +547,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemoiOS;
 				SWIFT_VERSION = 5.0;

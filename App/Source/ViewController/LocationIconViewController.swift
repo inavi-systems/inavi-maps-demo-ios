@@ -11,6 +11,7 @@ class LocationIconViewController: MapViewController {
     @IBOutlet weak var locationIconBearingSlider: UISlider!
     @IBOutlet weak var locationIconBearingValueLabel: UILabel!
     
+    let custom_location_icon_image = INVImage(name: "baseline_directions_run_black_36pt")
     var locationIcon: INVLocationIcon? = nil
     
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ class LocationIconViewController: MapViewController {
     }
     
     @IBAction func respondToLocationIconImage(_ sender: UISwitch) {
-        locationIcon?.image = sender.isOn ? INVImage(name: "baseline_directions_run_black_36pt") : INV_LOCATION_ICON_IMAGE
+        locationIcon?.image = sender.isOn ? custom_location_icon_image : INV_LOCATION_ICON_IMAGE
     }
     
     @IBAction func respondToLocationIconScale(_ sender: UISwitch) {
