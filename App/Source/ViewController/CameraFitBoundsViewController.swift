@@ -38,7 +38,7 @@ class CameraFitBoundsViewController: MapViewController {
             cameraUpdate = INVCameraUpdate(position: INVCameraPosition(position1, zoom: 15.0))
         }
         cameraUpdate.animation = .fly
-        cameraUpdate.animationDuration = 1
+        cameraUpdate.animationDuration = 3
         mapView?.moveCamera(cameraUpdate)
         
         let imageName = isInitPosition ? "baseline_replay_white_24pt" : "baseline_control_camera_white_24pt"

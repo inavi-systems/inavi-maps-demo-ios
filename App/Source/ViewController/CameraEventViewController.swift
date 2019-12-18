@@ -11,7 +11,7 @@ class CameraEventViewController: MapViewController {
     let labelTextFormat = "상태 : %@\n위치 : (%.5f, %.5f)\n줌 레벨 : %.2f\n기울기 : %.2f\n베어링 : %.2f"
     
     var isInitPosition = true
-    var isMoving = false
+    var isMovingByButton = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class CameraEventViewController: MapViewController {
     }
 
     @IBAction func respondToCameraMove(_ sender: UIActionButton) {
-        if isMoving {
+        if isMovingByButton {
             mapView?.cancelTransitions()
             return
         }
@@ -55,7 +55,7 @@ class CameraEventViewController: MapViewController {
         cameraUpdate.animation = .fly
         cameraUpdate.animationDuration = 3
         mapView?.moveCamera(cameraUpdate, completion: { [weak self] (isCancelled) in
-            self?.isMoving = false
+            self?.isMovingByButton = false
             self?.cameraMoveButton?.isSelected = false
 
             let alert = UIAlertController(title: isCancelled ? "카메라 이동 취소" : "카메라 이동 완료",
@@ -69,7 +69,7 @@ class CameraEventViewController: MapViewController {
             self?.cameraMoveButton?.setImage(UIImage(named: "baseline_play_arrow_white_24pt"), for: .normal)
         })
         
-        isMoving = true
+        isMovingByButton = true
         cameraMoveButton?.setImage(UIImage(named: "baseline_stop_white_24pt"), for: .normal)
         
         isInitPosition.toggle()

@@ -9,7 +9,7 @@ class UserTrackingModeViewController: MapViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView?.userTrackingMode = .none
+        mapView?.userTrackingMode = .tracking
         mapView?.showLocationButton = true
     }
     

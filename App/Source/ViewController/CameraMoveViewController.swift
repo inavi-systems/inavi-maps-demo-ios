@@ -9,13 +9,14 @@ class CameraMoveViewController: MapViewController, UIActionSheetDelegate {
     let position2 = INVLatLng(lat: 36.99473, lng: 127.81832)
     
     var isInitPosition = true
-    var cameraUpdateAnimation = INVCameraUpdateAnimation.none
+    var cameraUpdateAnimation = INVCameraUpdateAnimation.fly
     
     let animationTypes = ["None", "Linear", "Ease In", "Ease Out", "Fly"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         shapeInit()
+        self.selectButton?.setTitle(self.animationTypes.last, for: .normal)
     }
     
     func shapeInit() {

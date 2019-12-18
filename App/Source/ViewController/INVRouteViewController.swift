@@ -2,15 +2,20 @@ import UIKit
 import iNaviMaps
 
 class INVRouteViewController: MapViewController {
-    let links = [INVRouteLink(coords: [
-        INVLatLng(lat: 37.39475, lng: 127.11271),
-        INVLatLng(lat: 37.39606, lng: 127.11274),
-        INVLatLng(lat: 37.39608, lng: 127.11272),
-        INVLatLng(lat: 37.39611, lng: 127.11270),
-        INVLatLng(lat: 37.39614, lng: 127.11262),
-        INVLatLng(lat: 37.39613, lng: 127.11121),
-        INVLatLng(lat: 37.39633, lng: 127.11121)
-    ], lineColor: UIColor.red, stroke: UIColor.white),
+    let links = [
+        INVRouteLink(coords: [
+            INVLatLng(lat: 37.39475, lng: 127.11271),
+            INVLatLng(lat: 37.39606, lng: 127.11274),
+            INVLatLng(lat: 37.39608, lng: 127.11273),
+            INVLatLng(lat: 37.39611, lng: 127.11270),
+            INVLatLng(lat: 37.39614, lng: 127.11262),
+            INVLatLng(lat: 37.39614, lng: 127.11141),
+            INVLatLng(lat: 37.39616, lng: 127.11134),
+            INVLatLng(lat: 37.39620, lng: 127.11127),
+            INVLatLng(lat: 37.39624, lng: 127.11124),
+            INVLatLng(lat: 37.39629, lng: 127.11122),
+            INVLatLng(lat: 37.39633, lng: 127.11121)
+        ], lineColor: UIColor.red, stroke: UIColor.white),
         INVRouteLink(coords: [
             INVLatLng(lat: 37.39633, lng: 127.11121),
             INVLatLng(lat: 37.39976, lng: 127.11123)
@@ -21,8 +26,13 @@ class INVRouteViewController: MapViewController {
         ], lineColor: UIColor.blue, stroke: UIColor.white),
         INVRouteLink(coords: [
             INVLatLng(lat: 37.40091, lng: 127.11120),
-            INVLatLng(lat: 37.40163, lng: 127.11116),
-            INVLatLng(lat: 37.40161, lng: 127.11077),
+            INVLatLng(lat: 37.40156, lng: 127.11118),
+            INVLatLng(lat: 37.40160, lng: 127.11116),
+            INVLatLng(lat: 37.40162, lng: 127.11112),
+            INVLatLng(lat: 37.40162, lng: 127.11085),
+            INVLatLng(lat: 37.40164, lng: 127.11081),
+            INVLatLng(lat: 37.40167, lng: 127.11078),
+            INVLatLng(lat: 37.40170, lng: 127.11077),
             INVLatLng(lat: 37.40217, lng: 127.11077)
         ], lineColor: UIColor.red, stroke: UIColor.white),
     ]
@@ -76,7 +86,7 @@ extension INVRouteViewController {
         routeShape.passRatio = CGFloat(sender.value)
         
         let params = INVCameraUpdateParams()
-        params.scroll(to: passMarker.position)
+        params.target(to: passMarker.position)
         params.zoom(to: 16.0)
         params.tilt(to: 60.0)
         params.bearing(to: Double(routeShape.passAngle))

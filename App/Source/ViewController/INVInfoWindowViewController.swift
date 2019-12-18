@@ -112,9 +112,5 @@ class INVInfoWindowViewController: MapViewController {
         } else {
             infoWindow.imageDataSource = textInfoWindowDataSource
         }
-        
-        if (infoWindow.mapView != nil) {
-            infoWindow.invalidate()
-        }
     }
 }

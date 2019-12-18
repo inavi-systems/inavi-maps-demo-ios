@@ -46,10 +46,11 @@ class INVCameraUpdateParamsViewController: MapViewController {
     @IBAction func respondToCameraUpdate(_ sender: UIButton) {
         let params = INVCameraUpdateParams()
         let cameraPosition = mapView.cameraPosition
-        
+        var duration = 1.0
         if updateTarget {
-            params.scroll(to: isInitPosition ? position2 : position1)
+            params.target(to: isInitPosition ? position2 : position1)
             isInitPosition.toggle()
+            duration = 5.0
         }
         if updateZoom {
             var zoomDelta = 3.0
@@ -70,8 +71,8 @@ class INVCameraUpdateParamsViewController: MapViewController {
         }
         
         let cameraUpdate = INVCameraUpdate(params: params)
-        cameraUpdate.animation = .easeIn
-        cameraUpdate.animationDuration = 0.5
+        cameraUpdate.animation = .fly
+        cameraUpdate.animationDuration = duration
         
         mapView?.moveCamera(cameraUpdate)
     }

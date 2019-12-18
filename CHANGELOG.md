@@ -1,5 +1,27 @@
 # Change Log
 
+## 0.3.1 - 2019-12-18
+
+### Features
+ - 지도 이동 영역을 제한하는 I/F 추가
+   - `InaviMapView#constraintBounds`
+ - 로고 클릭 이벤트 활성화 여부 설정 I/F 추가
+   - `InaviMapView#logoClickEnabled`
+ - 오픈소스 라이선스, 법적 공지 ViewController 호출 I/F 추가
+   - `INVMapSdk#presentLicenseViewController`, `INVMapSdk#presentLegalNoticeViewController`
+ - 마커 아이콘과 타이틀 사이의 여백을 설정하는 기능 추가
+   - `INVMarker#titleMargin`
+ - `INVLatLng`, `INVLatLngBounds`의 property readonly 속성으로 변경
+ - `INVCameraUpdateParams#scrollTo` *Deprecated* 적용 (`targetTo` 로 대체됩니다.)
+ - `INVCameraUpdateParams#scrollBy` *Deprecated* 적용 (`targetBy` 로 대체됩니다.)
+ - `INVLatLngBounds#latLngBoundsSouthWest` Deprecated 적용 (`boundsWithSouthWest` 로 대체됩니다.)
+
+### Bug fixes
+ - 지도 줌 제스처 비활성화 시 지도 더블 탭 이벤트 콜백이 호출되지 않는 오류 수정
+ - 초기 지도 로딩 중 `UserTrackingMode`가 설정되지 않는 오류 수정
+ - `INVRoute` 연결 부분이 매끄럽게 그려지지 않는 오류 수정
+ - `INVCameraParams`에서 변화량으로 지도 이동 시 다른 속성이 무시되는 오류 수정
+
 ## 0.3.0 - 2019-11-26
 
 ### Features
