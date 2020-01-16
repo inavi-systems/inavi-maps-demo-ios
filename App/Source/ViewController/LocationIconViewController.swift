@@ -19,11 +19,11 @@ class LocationIconViewController: MapViewController {
         locationIcon = mapView.locationIcon
         
         locationIcon?.position = mapView.cameraPosition.target
-        locationIcon?.touchEvent = { (shape) in
+        locationIcon?.touchEvent = { [weak self] (shape: INVShape) in
             let alert = UIAlertController(title: "위치 아이콘 클릭됨",
                                           message: nil,
                                           preferredStyle: .alert)
-            self.present(alert, animated: true, completion: {
+            self?.present(alert, animated: true, completion: {
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5, execute: {
                     alert.dismiss(animated: true, completion: nil)
                 })

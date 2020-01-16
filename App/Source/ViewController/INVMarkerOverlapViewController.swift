@@ -39,4 +39,10 @@ class INVMarkerOverlapViewController: MapViewController {
             marker.isAllowOverlapTitle = sender.isOn
         }
     }
+    
+    @IBAction func respondToAnimationEnabled(_ sender: UISwitch) {
+        for marker in markers {
+            marker.isTransitionEnabled = sender.isOn
+        }
+    }
 }

@@ -1,5 +1,18 @@
 # Change Log
 
+## 0.3.2 - 2020-01-16
+
+### Features
+- 마커 표출 상태 변경 시 애니메이션 기본값 비활성화로 변경
+- 마커 표출 상태 변경 시 애니메이션 설정 API 추가
+  - `INVMarker#isTransitionEnabled`
+- `INVMarker#infoWindow` 속성 nullable로 변경
+
+### Bug fixes
+- 마커 타이틀에 "^" 문자 포함 시 줄바꿈되는 오류 수정
+- Fly 애니메이션 타입 카메라 이동 시 자연스럽지 않은 오류 수정
+- 줌 컨트롤러에 지도의 Padding 값이 적용되지 않는 오류 수정
+
 ## 0.3.1 - 2019-12-18
 
 ### Features
