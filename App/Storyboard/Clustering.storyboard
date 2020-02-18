@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Marker Clustering-->
+        <scene sceneID="elF-eZ-fXX">
+            <objects>
+                <viewController storyboardIdentifier="MarkerClustering" title="Marker Clustering" id="zsW-Q0-psf" customClass="MarkerClusteringViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="htd-jH-pAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRy-fM-Wsx" customClass="InaviMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gRy-fM-Wsx" firstAttribute="top" secondItem="ixq-gI-tdh" secondAttribute="top" id="RH2-p6-FSC"/>
+                            <constraint firstItem="gRy-fM-Wsx" firstAttribute="trailing" secondItem="htd-jH-pAQ" secondAttribute="trailing" id="VGb-T1-loR"/>
+                            <constraint firstItem="gRy-fM-Wsx" firstAttribute="bottom" secondItem="htd-jH-pAQ" secondAttribute="bottom" id="eh6-GB-0cv"/>
+                            <constraint firstItem="gRy-fM-Wsx" firstAttribute="leading" secondItem="htd-jH-pAQ" secondAttribute="leading" id="wVg-4U-Vc1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ixq-gI-tdh"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="gRy-fM-Wsx" id="Wul-3R-P3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Syn-OM-d3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-703" y="-1013"/>
+        </scene>
+    </scenes>
+</document>

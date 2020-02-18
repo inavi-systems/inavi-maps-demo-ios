@@ -1,5 +1,22 @@
 # Change Log
 
+## 0.4.0 - 2020-02-17
+### Features
+- 마커 클러스터링 기능 추가
+  - `INVCluster`, `INVClusterItem`, `INVClusterManager`, `INVClusterManagerDelegate`, `INVClusterIconGenerator`, `INVDefaultClusterIconGenerator`
+- `INVRoute#lineWidth` 속성 기본값 `5`로 변경
+- `INVRoute#strokeWidth` 속성 기본값 `1` 로 변경
+- `INVRouteLink#lineColor` 속성 기본값 `UIColor.whiteColor`로 변경
+- `INVRouteLink#strokeColor` 속성 기본값 `UIColor.blackColor`로 변경
+- `INVMarker#titleMaxWidth` 속성 기본값 `0`으로 변경
+
+### Bug fixes
+- `INVShape` 추가/제거 시 비정상 종료되는 오류 수정
+- `INVRoute` 표출 시 간헐적으로 외곽선이 비정상적으로 표출되는 오류 수정
+
+### ETC
+- SDK Git LFS 적용
+
 ## 0.3.2 - 2020-01-16
 
 ### Features

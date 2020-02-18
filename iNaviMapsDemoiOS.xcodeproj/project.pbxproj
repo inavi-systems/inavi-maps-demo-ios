@@ -42,6 +42,8 @@
 		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
 		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
 		D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */; };
+		D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */; };
+		D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */; };
 		E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		8ADAD77322D42A9D00782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADAD77822D42A9D00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVRouteViewController.swift; sourceTree = "<group>"; };
+		D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clustering.storyboard; sourceTree = "<group>"; };
+		D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerClusteringViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 				74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */,
 				74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */,
 				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
+				D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */,
 				74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */,
 				74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */,
 				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
@@ -166,6 +171,7 @@
 				74FF9E3823447BD6001E94B2 /* Main.storyboard */,
 				74FF9E3A23447BD6001E94B2 /* Camera.storyboard */,
 				74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */,
+				D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */,
 				74FF9E3C23447BD6001E94B2 /* Location.storyboard */,
 				74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */,
 				74FF9E3E23447BD6001E94B2 /* Misc.storyboard */,
@@ -233,7 +239,7 @@
 				8ADAD76522D42A9C00782103 /* Sources */,
 				8ADAD76622D42A9C00782103 /* Frameworks */,
 				8ADAD76722D42A9C00782103 /* Resources */,
-				F13158A74E84F6180C72E45E /* [CP] Embed Pods Frameworks */,
+				6A84C9616B779D0A0258F90E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,12 +299,30 @@
 				74FF9E4523447BD6001E94B2 /* MapOptions.storyboard in Resources */,
 				74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */,
 				74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */,
+				D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6A84C9616B779D0A0258F90E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,23 +345,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F13158A74E84F6180C72E45E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -353,6 +360,7 @@
 				74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */,
 				74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */,
 				74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */,
+				D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */,
 				74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */,
 				74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */,
 				74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */,
@@ -517,7 +525,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -525,7 +533,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.2;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemoiOS;
 				SWIFT_VERSION = 5.0;
@@ -539,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -547,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.2;
+				MARKETING_VERSION = 0.4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemoiOS;
 				SWIFT_VERSION = 5.0;

@@ -15,15 +15,15 @@ class INVRouteViewController: MapViewController {
             INVLatLng(lat: 37.39624, lng: 127.11124),
             INVLatLng(lat: 37.39629, lng: 127.11122),
             INVLatLng(lat: 37.39633, lng: 127.11121)
-        ], lineColor: UIColor.red, stroke: UIColor.white),
+        ], lineColor: .red, stroke: .white),
         INVRouteLink(coords: [
             INVLatLng(lat: 37.39633, lng: 127.11121),
             INVLatLng(lat: 37.39976, lng: 127.11123)
-        ], lineColor: UIColor.green, stroke: UIColor.white),
+        ], lineColor: .green, stroke: .white),
         INVRouteLink(coords: [
             INVLatLng(lat: 37.39976, lng: 127.11123),
             INVLatLng(lat: 37.40091, lng: 127.11120)
-        ], lineColor: UIColor.blue, stroke: UIColor.white),
+        ], lineColor: .blue, stroke: .white),
         INVRouteLink(coords: [
             INVLatLng(lat: 37.40091, lng: 127.11120),
             INVLatLng(lat: 37.40156, lng: 127.11118),
@@ -34,7 +34,7 @@ class INVRouteViewController: MapViewController {
             INVLatLng(lat: 37.40167, lng: 127.11078),
             INVLatLng(lat: 37.40170, lng: 127.11077),
             INVLatLng(lat: 37.40217, lng: 127.11077)
-        ], lineColor: UIColor.red, stroke: UIColor.white),
+        ], lineColor: .red, stroke: .white),
     ]
     
     @IBOutlet weak var slider: UISlider!
@@ -59,12 +59,12 @@ class INVRouteViewController: MapViewController {
     
     func shapeInit() {
         routeShape.delegate         = self
-        routeShape.links 		    = links
-        routeShape.lineWidth 	    = 8
-        routeShape.strokeWidth 	    = 2
-        routeShape.passLineColor    = UIColor.lightGray
-        routeShape.passStrokeColor  = UIColor.white
-        routeShape.mapView 		    = self.mapView
+        routeShape.links            = links
+        routeShape.lineWidth        = 8
+        routeShape.strokeWidth      = 2
+        routeShape.passLineColor    = .lightGray
+        routeShape.passStrokeColor  = .white
+        routeShape.mapView          = self.mapView
         
         passMarker.position = links[0].coords[0]
         passMarker.mapView = self.mapView
