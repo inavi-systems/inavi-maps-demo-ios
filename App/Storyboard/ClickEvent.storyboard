@@ -11,7 +11,7 @@
         <!--Map Click-->
         <scene sceneID="jg6-vW-j54">
             <objects>
-                <viewController storyboardIdentifier="MapClickEvent" title="Map Click" id="feo-Ga-lF4" customClass="MapClickEventViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapClickEvent" title="Map Click" id="feo-Ga-lF4" customClass="MapClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H7V-Ur-oeM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
         <!--Shape Click-->
         <scene sceneID="3t1-M3-AnT">
             <objects>
-                <viewController storyboardIdentifier="ShapeClickEvent" title="Shape Click" id="8EL-0Y-VQ6" customClass="ShapeClickEventViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShapeClickEvent" title="Shape Click" id="8EL-0Y-VQ6" customClass="ShapeClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygA-Cc-vr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -11,7 +11,7 @@
         <!--Projection-->
         <scene sceneID="YdR-Hw-huk">
             <objects>
-                <viewController storyboardIdentifier="Projection" title="Projection" id="frb-0o-81G" customClass="ProjectionViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Projection" title="Projection" id="frb-0o-81G" customClass="ProjectionViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0es-u6-xam">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

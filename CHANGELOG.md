@@ -1,10 +1,21 @@
 # Change Log
 
-## 0.4.1 - 2020-02-26
+## 0.4.2 - 2020-03-10
+
 ### Features
-- 아이나비 로고 이미지 변경
+- 특정 영역 전체가 보이는 카메라 위치 정보를 반환하는 API 추가
+  - `InaviMapView#cameraFitBounds`
+
+- 지도에 등록된 모든 셰이프를 지도에서 제거하는 API 추가
+  - `InaviMapView#clearShapes`
+
+## 0.4.1 - 2020-02-26
+
+### Features
+- 지도 로고 이미지 변경
 
 ## 0.4.0 - 2020-02-17
+
 ### Features
 - 마커 클러스터링 기능 추가
   - `INVCluster`, `INVClusterItem`, `INVClusterManager`, `INVClusterManagerDelegate`, `INVClusterIconGenerator`, `INVDefaultClusterIconGenerator`
@@ -37,11 +48,11 @@
 ## 0.3.1 - 2019-12-18
 
 ### Features
- - 지도 이동 영역을 제한하는 I/F 추가
+ - 지도 이동 영역 제한 API 추가
    - `InaviMapView#constraintBounds`
- - 로고 클릭 이벤트 활성화 여부 설정 I/F 추가
+ - 로고 클릭 이벤트 활성화 여부 설정 API 추가
    - `InaviMapView#logoClickEnabled`
- - 오픈소스 라이선스, 법적 공지 ViewController 호출 I/F 추가
+ - 오픈소스 라이선스, 법적 공지 ViewController 호출 API 추가
    - `INVMapSdk#presentLicenseViewController`, `INVMapSdk#presentLegalNoticeViewController`
  - 마커 아이콘과 타이틀 사이의 여백을 설정하는 기능 추가
    - `INVMarker#titleMargin`
