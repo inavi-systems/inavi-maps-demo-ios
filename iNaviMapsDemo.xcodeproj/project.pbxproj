@@ -41,18 +41,20 @@
 		74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3E23447BD6001E94B2 /* Misc.storyboard */; };
 		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
 		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
+		C7AB1019CE46A3D3CDBF95D4 /* Pods_iNaviMapsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */; };
 		D66FEAF8241608CC005622FE /* MapRestrictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */; };
 		D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */; };
 		D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */; };
 		D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */; };
-		E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.release.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.release.xcconfig"; sourceTree = "<group>"; };
+		38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNaviMapsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemo.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		420718C55FFCC104EF22E64F /* Pods-inaviMapsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.debug.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.debug.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNaviMapsDemoiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemo.debug.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		74D5298A237C105E00B28E16 /* LocationIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationIconViewController.swift; sourceTree = "<group>"; };
 		74FF9E0023447B9E001E94B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74FF9E0223447B9E001E94B2 /* UIActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActionButton.swift; sourceTree = "<group>"; };
@@ -87,7 +89,7 @@
 		74FF9E3E23447BD6001E94B2 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
 		74FF9E3F23447BD6001E94B2 /* Shape.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shape.storyboard; sourceTree = "<group>"; };
 		7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
-		8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNaviMapsDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ADAD76922D42A9C00782103 /* iNaviMapsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNaviMapsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADAD77322D42A9D00782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADAD77822D42A9D00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRestrictionViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E549D843D220AEE81C9C7412 /* Pods_iNaviMapsDemoiOS.framework in Frameworks */,
+				C7AB1019CE46A3D3CDBF95D4 /* Pods_iNaviMapsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +198,7 @@
 		8ADAD76A22D42A9C00782103 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */,
+				8ADAD76922D42A9C00782103 /* iNaviMapsDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +221,8 @@
 				116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */,
 				5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */,
 				7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */,
+				5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */,
+				3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,7 +230,7 @@
 		F432220A0BF6A2D92BC39C81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				531DE88294E338CB2C5C1DF1 /* Pods_iNaviMapsDemoiOS.framework */,
+				38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,9 +238,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8ADAD76822D42A9C00782103 /* iNaviMapsDemoiOS */ = {
+		8ADAD76822D42A9C00782103 /* iNaviMapsDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemoiOS" */;
+			buildConfigurationList = 8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemo" */;
 			buildPhases = (
 				ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */,
 				8ADAD76522D42A9C00782103 /* Sources */,
@@ -248,9 +252,9 @@
 			);
 			dependencies = (
 			);
-			name = iNaviMapsDemoiOS;
+			name = iNaviMapsDemo;
 			productName = inaviMapsApp;
-			productReference = 8ADAD76922D42A9C00782103 /* iNaviMapsDemoiOS.app */;
+			productReference = 8ADAD76922D42A9C00782103 /* iNaviMapsDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemoiOS" */;
+			buildConfigurationList = 8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = ko;
 			hasScannedForEncodings = 0;
@@ -282,7 +286,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8ADAD76822D42A9C00782103 /* iNaviMapsDemoiOS */,
+				8ADAD76822D42A9C00782103 /* iNaviMapsDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -315,15 +319,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */ = {
@@ -341,7 +345,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iNaviMapsDemoiOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iNaviMapsDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -525,11 +529,11 @@
 		};
 		8ADAD77C22D42A9D00782103 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */;
+			baseConfigurationReference = 5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -537,9 +541,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.2;
+				MARKETING_VERSION = 0.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
-				PRODUCT_NAME = iNaviMapsDemoiOS;
+				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,11 +551,11 @@
 		};
 		8ADAD77D22D42A9D00782103 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */;
+			baseConfigurationReference = 3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -559,9 +563,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.4.2;
+				MARKETING_VERSION = 0.4.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
-				PRODUCT_NAME = iNaviMapsDemoiOS;
+				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemoiOS" */ = {
+		8ADAD76422D42A9C00782103 /* Build configuration list for PBXProject "iNaviMapsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ADAD77922D42A9D00782103 /* Debug */,
@@ -579,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemoiOS" */ = {
+		8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ADAD77C22D42A9D00782103 /* Debug */,

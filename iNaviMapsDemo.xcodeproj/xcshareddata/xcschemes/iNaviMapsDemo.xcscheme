@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8ADAD76822D42A9C00782103"
-               BuildableName = "iNaviMapsDemoiOS.app"
-               BlueprintName = "iNaviMapsDemoiOS"
-               ReferencedContainer = "container:iNaviMapsDemoiOS.xcodeproj">
+               BuildableName = "iNaviMapsDemo.app"
+               BlueprintName = "iNaviMapsDemo"
+               ReferencedContainer = "container:iNaviMapsDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ADAD76822D42A9C00782103"
-            BuildableName = "iNaviMapsDemoiOS.app"
-            BlueprintName = "iNaviMapsDemoiOS"
-            ReferencedContainer = "container:iNaviMapsDemoiOS.xcodeproj">
+            BuildableName = "iNaviMapsDemo.app"
+            BlueprintName = "iNaviMapsDemo"
+            ReferencedContainer = "container:iNaviMapsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8ADAD76822D42A9C00782103"
-            BuildableName = "iNaviMapsDemoiOS.app"
-            BlueprintName = "iNaviMapsDemoiOS"
-            ReferencedContainer = "container:iNaviMapsDemoiOS.xcodeproj">
+            BuildableName = "iNaviMapsDemo.app"
+            BlueprintName = "iNaviMapsDemo"
+            ReferencedContainer = "container:iNaviMapsDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

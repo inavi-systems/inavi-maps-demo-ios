@@ -28,10 +28,10 @@ class CameraMoveViewController: MapViewController, UIActionSheetDelegate {
     }
     
     @IBAction func respondToCameraUpdateAnimation(_ sender: UIButton) {
-        let actionSheet = UIAlertController(title: "애니메이션 선택", message: nil, preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: "애니메이션 선택", message: nil, preferredStyle: .actionSheet)
         
         for (index, animationType) in animationTypes.enumerated() {
-            actionSheet.addAction(UIAlertAction(title: animationType, style: .default, handler: {
+            alertController.addAction(UIAlertAction(title: animationType, style: .default, handler: {
                 (alert: UIAlertAction!) -> Void in
                 switch index {
                 case 1:
@@ -53,9 +53,18 @@ class CameraMoveViewController: MapViewController, UIActionSheetDelegate {
                 }
             }))
         }
-        actionSheet.addAction(UIAlertAction(title: "닫기", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "닫기", style: .cancel))
         
-        self.present(actionSheet, animated: true, completion: nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if let popoverController = alertController.popoverPresentationController {
+                popoverController.sourceView = self.view
+                popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                popoverController.permittedArrowDirections = []
+                self.present(alertController, animated: true, completion: nil)
+            }
+        } else {
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func respondToCameraMove(_ sender: UIButton) {

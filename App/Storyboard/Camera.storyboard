@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Camera Move-->
         <scene sceneID="qgO-yO-KbD">
             <objects>
-                <viewController storyboardIdentifier="CameraMove" title="Camera Move" automaticallyAdjustsScrollViewInsets="NO" id="1XS-y4-77C" customClass="CameraMoveViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera Move" automaticallyAdjustsScrollViewInsets="NO" id="1XS-y4-77C" customClass="CameraMoveViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0r-G3-fmZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,32 +24,50 @@
                                 <rect key="frame" x="0.0" y="724" width="414" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="애니메이션 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ll5-U9-PSC" userLabel="Label">
-                                        <rect key="frame" x="15" y="15" width="87" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-Py-2Z4">
-                                        <rect key="frame" x="110" y="3" width="155" height="44"/>
+                                        <rect key="frame" x="15" y="15" width="100" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="WGX-Qd-JtY"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="None"/>
-                                        <connections>
-                                            <action selector="respondToCameraUpdateAnimation:" destination="1XS-y4-77C" eventType="touchUpInside" id="IsO-ok-eg0"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-vA-3xM">
-                                        <rect key="frame" x="265" y="3" width="26" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="PZz-9D-JDQ"/>
-                                            <constraint firstAttribute="width" constant="26" id="orP-Bg-V2m"/>
+                                            <constraint firstAttribute="width" constant="100" id="5b5-gB-sQl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mw0-7u-AmF" userLabel="Select View">
+                                        <rect key="frame" x="107" y="3" width="140" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVh-Py-2Z4">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="BRn-Gx-G2v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="None"/>
+                                                <connections>
+                                                    <action selector="respondToCameraUpdateAnimation:" destination="1XS-y4-77C" eventType="touchUpInside" id="IsO-ok-eg0"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▼" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzq-vA-3xM">
+                                                <rect key="frame" x="114" y="0.0" width="26" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26" id="orP-Bg-V2m"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="D1u-3q-0Lq"/>
+                                            <constraint firstItem="BVh-Py-2Z4" firstAttribute="height" secondItem="Mw0-7u-AmF" secondAttribute="height" id="MIO-wi-4a2"/>
+                                            <constraint firstItem="Yzq-vA-3xM" firstAttribute="height" secondItem="Mw0-7u-AmF" secondAttribute="height" id="Y2D-qa-tSb"/>
+                                            <constraint firstItem="BVh-Py-2Z4" firstAttribute="trailing" secondItem="Yzq-vA-3xM" secondAttribute="trailing" id="dUn-cq-VKA"/>
+                                            <constraint firstAttribute="leading" secondItem="BVh-Py-2Z4" secondAttribute="leading" id="h8w-yh-ZFc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yzq-vA-3xM" secondAttribute="trailing" id="juX-ef-cKf"/>
+                                            <constraint firstItem="Yzq-vA-3xM" firstAttribute="centerY" secondItem="Mw0-7u-AmF" secondAttribute="centerY" id="nMR-H2-AGL"/>
+                                            <constraint firstItem="BVh-Py-2Z4" firstAttribute="centerY" secondItem="Mw0-7u-AmF" secondAttribute="centerY" id="sIJ-38-f8o"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dv-iu-4ib">
                                         <rect key="frame" x="299" y="7" width="100" height="36"/>
                                         <color key="backgroundColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,14 +85,12 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="BVh-Py-2Z4" firstAttribute="leading" secondItem="ll5-U9-PSC" secondAttribute="trailing" constant="8" id="1NN-Nw-Oil"/>
                                     <constraint firstAttribute="trailing" secondItem="0Dv-iu-4ib" secondAttribute="trailing" constant="15" id="7vs-52-RL0"/>
-                                    <constraint firstItem="Yzq-vA-3xM" firstAttribute="centerY" secondItem="jnp-rD-hfZ" secondAttribute="centerY" id="E51-Mu-FBW"/>
-                                    <constraint firstItem="Yzq-vA-3xM" firstAttribute="leading" secondItem="BVh-Py-2Z4" secondAttribute="trailing" id="ICH-uu-7Em"/>
-                                    <constraint firstItem="BVh-Py-2Z4" firstAttribute="centerY" secondItem="jnp-rD-hfZ" secondAttribute="centerY" id="To9-Yw-Kwi"/>
-                                    <constraint firstItem="0Dv-iu-4ib" firstAttribute="leading" secondItem="Yzq-vA-3xM" secondAttribute="trailing" constant="8" id="XZa-ut-wZX"/>
+                                    <constraint firstItem="Mw0-7u-AmF" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="0Dv-iu-4ib" secondAttribute="leading" id="Izv-4w-9Ll"/>
+                                    <constraint firstItem="ll5-U9-PSC" firstAttribute="trailing" secondItem="Mw0-7u-AmF" secondAttribute="leading" constant="8" id="bcy-DT-fkG"/>
                                     <constraint firstItem="ll5-U9-PSC" firstAttribute="centerY" secondItem="jnp-rD-hfZ" secondAttribute="centerY" id="obe-6W-w8n"/>
                                     <constraint firstAttribute="height" constant="50" id="pfh-pA-LeP"/>
+                                    <constraint firstItem="Mw0-7u-AmF" firstAttribute="centerY" secondItem="jnp-rD-hfZ" secondAttribute="centerY" id="qRq-qb-ya2"/>
                                     <constraint firstItem="ll5-U9-PSC" firstAttribute="leading" secondItem="jnp-rD-hfZ" secondAttribute="leading" constant="15" id="rE0-bp-uec"/>
                                     <constraint firstItem="0Dv-iu-4ib" firstAttribute="centerY" secondItem="jnp-rD-hfZ" secondAttribute="centerY" id="wEa-5d-bD0"/>
                                 </constraints>
@@ -92,6 +108,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ml9-mk-Cs9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Camera Move" id="9BR-zZ-CiO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="hTn-8M-fbg" id="xJP-Xe-cQA"/>
@@ -105,7 +122,7 @@
         <!--INVCameraUpdateParams-->
         <scene sceneID="kRd-Wt-gAs">
             <objects>
-                <viewController storyboardIdentifier="INVCameraUpdateParams" title="INVCameraUpdateParams" automaticallyAdjustsScrollViewInsets="NO" id="h0c-zb-56U" customClass="INVCameraUpdateParamsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVCameraUpdateParams" automaticallyAdjustsScrollViewInsets="NO" id="h0c-zb-56U" customClass="INVCameraUpdateParamsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN2-UZ-LIg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,6 +249,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="E0r-oH-E7y"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVCameraUpdateParams" id="WoL-hG-FI9"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="Mab-Sq-Lst" id="cdn-B6-2Tz"/>
@@ -239,12 +257,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tc-dC-baj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3770" y="-1013"/>
+            <point key="canvasLocation" x="-2754" y="-1013"/>
         </scene>
         <!--Camera Move to Fit Bounds-->
         <scene sceneID="5bT-be-Bkj">
             <objects>
-                <viewController storyboardIdentifier="CameraFitBounds" title="Camera Move to Fit Bounds" id="Bsq-Of-54P" customClass="CameraFitBoundsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bsq-Of-54P" customClass="CameraFitBoundsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTU-7K-GDV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,6 +311,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eok-Bx-dhM"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Camera Move to Fit Bounds" id="0qy-aW-JcH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="fitBoundsButton" destination="evP-fV-o5E" id="a3a-bL-XNj"/>
@@ -301,12 +320,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZl-ux-76t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3155" y="-1013"/>
+            <point key="canvasLocation" x="-4387" y="-296"/>
         </scene>
         <!--Camera Events-->
         <scene sceneID="k3P-p6-m2O">
             <objects>
-                <viewController storyboardIdentifier="CameraEvents" title="Camera Events" id="qD9-lL-eGQ" customClass="CameraEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera Events" id="qD9-lL-eGQ" customClass="CameraEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3A-fo-ynN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -390,6 +409,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3RA-Lw-frj"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Camera Events" id="74h-8S-nZX"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="cameraMoveButton" destination="qwx-dN-v0L" id="5tA-ys-rWI"/>
@@ -399,7 +419,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikJ-pU-2EP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2539" y="-1013"/>
+            <point key="canvasLocation" x="-2755" y="-297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tJo-uB-dqR">
+            <objects>
+                <navigationController storyboardIdentifier="CameraEvents" id="Ytt-CL-vKD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T7m-8P-2Ol">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="qD9-lL-eGQ" kind="relationship" relationship="rootViewController" id="C27-Ou-ypk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sP-Md-45W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3572" y="-297"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W9G-Pf-ItR">
+            <objects>
+                <navigationController storyboardIdentifier="CameraMove" id="VGY-IP-3Mb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BNb-MY-CaA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1XS-y4-77C" kind="relationship" relationship="rootViewController" id="Yte-9b-j2i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIG-se-VxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5191" y="-1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CHS-Ob-I1r">
+            <objects>
+                <navigationController storyboardIdentifier="INVCameraUpdateParams" id="1ic-72-Rr5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xWO-7O-ql2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h0c-zb-56U" kind="relationship" relationship="rootViewController" id="eGE-Vq-kMv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgP-OO-qAo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3572" y="-1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GsZ-qh-0gL">
+            <objects>
+                <navigationController storyboardIdentifier="CameraFitBounds" id="l3w-CM-P9F" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="idk-XF-bIm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bsq-Of-54P" kind="relationship" relationship="rootViewController" id="97u-Dt-woS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sw-DH-pgt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5191" y="-296"/>
         </scene>
     </scenes>
     <resources>

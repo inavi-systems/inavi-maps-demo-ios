@@ -33,10 +33,10 @@ class UserTrackingModeViewController: MapViewController {
     }
     
     @IBAction func respondToUserTrackingMode(_ sender: UIButton) {
-        let actionSheet = UIAlertController(title: "위치 추적 모드 선택", message: nil, preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: "위치 추적 모드 선택", message: nil, preferredStyle: .actionSheet)
         
         for (index, userTrackingMode) in userTrackingModes.enumerated() {
-            actionSheet.addAction(UIAlertAction(title: userTrackingMode, style: .default, handler: {
+            alertController.addAction(UIAlertAction(title: userTrackingMode, style: .default, handler: {
                 (alert: UIAlertAction!) -> Void in
                 switch index {
                 case 1:
@@ -51,8 +51,17 @@ class UserTrackingModeViewController: MapViewController {
                 }
             }))
         }
-        actionSheet.addAction(UIAlertAction(title: "닫기", style: .cancel))
+        alertController.addAction(UIAlertAction(title: "닫기", style: .cancel))
         
-        self.present(actionSheet, animated: true, completion: nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if let popoverController = alertController.popoverPresentationController {
+                popoverController.sourceView = self.view
+                popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                popoverController.permittedArrowDirections = []
+                self.present(alertController, animated: true, completion: nil)
+            }
+        } else {
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 }

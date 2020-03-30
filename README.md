@@ -29,7 +29,7 @@ git lfs install
 
 ```ruby
 # Podfile
-target 'iNaviMapsDemoiOS' do
+target 'iNaviMapsDemo' do
   use_frameworks!
   ...
   pod 'inavi-maps-sdk'

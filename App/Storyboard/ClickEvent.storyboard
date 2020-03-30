@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Map Click-->
         <scene sceneID="jg6-vW-j54">
             <objects>
-                <viewController storyboardIdentifier="MapClickEvent" title="Map Click" id="feo-Ga-lF4" customClass="MapClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map Click" id="feo-Ga-lF4" customClass="MapClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H7V-Ur-oeM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P67-qF-ISs"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Map Click" id="Sxg-k1-yOD"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="consumeEventSwitch" destination="La7-Ls-9JB" id="WMP-1y-UfA"/>
@@ -129,12 +130,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzb-mc-QmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-696" y="-1013"/>
+            <point key="canvasLocation" x="-683" y="-1013"/>
         </scene>
         <!--Shape Click-->
         <scene sceneID="3t1-M3-AnT">
             <objects>
-                <viewController storyboardIdentifier="ShapeClickEvent" title="Shape Click" id="8EL-0Y-VQ6" customClass="ShapeClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Shape Click" id="8EL-0Y-VQ6" customClass="ShapeClickEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygA-Cc-vr4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,6 +213,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="u2h-OM-ish"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Shape Click" id="4oY-Fa-bhn"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="UxO-V0-Zum" id="YZ7-4s-g8p"/>
@@ -220,7 +222,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G1o-58-CTn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="s84-gN-qFB"/>
             </objects>
-            <point key="canvasLocation" x="-75" y="-1013"/>
+            <point key="canvasLocation" x="910" y="-1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lcc-3F-oeo">
+            <objects>
+                <navigationController storyboardIdentifier="MapClickEvent" id="7cl-aK-f26" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TlJ-aN-vvp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="feo-Ga-lF4" kind="relationship" relationship="rootViewController" id="lTw-O8-eYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RHi-fO-9nN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1472" y="-1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="L0o-YL-l93">
+            <objects>
+                <navigationController storyboardIdentifier="ShapeClickEvent" id="9WH-lj-Fsy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aqU-qo-WHA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8EL-0Y-VQ6" kind="relationship" relationship="rootViewController" id="Zoh-La-8EW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5N-rP-J5E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-1013"/>
         </scene>
     </scenes>
 </document>

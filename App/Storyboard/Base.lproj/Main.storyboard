@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CeV-JB-usR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yhH-LX-pid">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="z4e-9g-nRr">
+            <objects>
+                <navigationController id="dru-A0-Y3M" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="h4f-5A-8bs">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="44n-Fw-LxC" kind="relationship" relationship="rootViewController" id="gjI-jZ-G71"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="izj-8W-2je" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4119" y="-761"/>
+        </scene>
         <!--InaviMapView-->
         <scene sceneID="ON2-uO-zcu">
             <objects>
@@ -30,13 +46,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uE6-Zv-hfy"/>
                     </view>
+                    <navigationItem key="navigationItem" title="InaviMapView" id="vS8-7i-QXC"/>
                     <connections>
                         <outlet property="mapView" destination="Ef7-i1-v5I" id="apT-5C-LYd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRV-PB-nfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1634" y="-1968"/>
+            <point key="canvasLocation" x="-3346" y="-761"/>
         </scene>
         <!--iNavi Maps Demo-->
         <scene sceneID="Tnd-db-NJ8">
@@ -85,7 +102,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="44n-Fw-LxC" kind="show" id="qi3-bB-p1r"/>
+                                            <segue destination="dru-A0-Y3M" kind="showDetail" id="Qy9-Jx-0X1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -128,7 +145,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="yus-K0-BDF" kind="show" id="2SG-3M-nwA"/>
+                                            <segue destination="yus-K0-BDF" kind="showDetail" id="2SG-3M-nwA"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="d0a-f5-rrf">
@@ -167,7 +184,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="zCk-Rn-3Mq" kind="show" id="Ut2-dj-5BW"/>
+                                            <segue destination="zCk-Rn-3Mq" kind="showDetail" id="Ut2-dj-5BW"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gll-S9-Cfq">
@@ -206,7 +223,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="7bM-UM-1De" kind="show" id="mPy-C4-DaP"/>
+                                            <segue destination="7bM-UM-1De" kind="showDetail" id="mPy-C4-DaP"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="23H-WO-5a4">
@@ -245,7 +262,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="MtD-6h-NhO" kind="show" id="DKf-gZ-gpY"/>
+                                            <segue destination="MtD-6h-NhO" kind="showDetail" id="DKf-gZ-gpY"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="850-S0-tIx">
@@ -284,7 +301,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HtC-US-GVI" kind="show" id="ic7-0N-y0i"/>
+                                            <segue destination="HtC-US-GVI" kind="showDetail" id="ic7-0N-y0i"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9B6-Bz-0cJ">
@@ -323,7 +340,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="qoU-v5-DhW" kind="show" id="cai-YU-jiN"/>
+                                            <segue destination="qoU-v5-DhW" kind="showDetail" id="cai-YU-jiN"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R0p-pE-xC7">
@@ -362,7 +379,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="8on-qf-Sqg" kind="show" id="U7k-aZ-WAH"/>
+                                            <segue destination="8on-qf-Sqg" kind="showDetail" id="U7k-aZ-WAH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xmi-nU-ABJ">
@@ -401,7 +418,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="hd7-v6-5S6" kind="show" id="cg2-ki-4Q5"/>
+                                            <segue destination="hd7-v6-5S6" kind="showDetail" id="cg2-ki-4Q5"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -444,7 +461,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BZa-Lw-83j" kind="show" id="SDT-09-lFc"/>
+                                            <segue destination="BZa-Lw-83j" kind="showDetail" id="SDT-09-lFc"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -487,7 +504,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="JhW-Hu-tiA" kind="show" id="CIt-zp-WDI"/>
+                                            <segue destination="JhW-Hu-tiA" kind="showDetail" id="CIt-zp-WDI"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vdC-IN-M47">
@@ -526,7 +543,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="yNs-4X-CTE" kind="show" id="OP9-oo-VDg"/>
+                                            <segue destination="yNs-4X-CTE" kind="showDetail" id="OP9-oo-VDg"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="9fs-HF-w75">
@@ -565,7 +582,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ak4-j5-0RY" kind="show" id="WcK-IC-kW5"/>
+                                            <segue destination="ak4-j5-0RY" kind="showDetail" id="WcK-IC-kW5"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4aY-Vb-Hnc">
@@ -604,7 +621,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Itl-2x-d0b" kind="show" id="UnR-QD-Zhb"/>
+                                            <segue destination="Itl-2x-d0b" kind="showDetail" id="UnR-QD-Zhb"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -647,7 +664,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Qph-qD-ftB" kind="show" id="4oL-ga-r1l"/>
+                                            <segue destination="Qph-qD-ftB" kind="showDetail" id="4oL-ga-r1l"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6ch-JG-H87">
@@ -686,7 +703,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="E5b-ub-cYw" kind="show" id="GSP-9D-z6a"/>
+                                            <segue destination="E5b-ub-cYw" kind="showDetail" id="GSP-9D-z6a"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="scC-pD-6ig">
@@ -725,7 +742,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3AA-GK-Wp3" kind="show" id="128-yh-kwH"/>
+                                            <segue destination="3AA-GK-Wp3" kind="showDetail" id="128-yh-kwH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bEa-Fe-M0P">
@@ -764,7 +781,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="86i-Ds-q14" kind="show" id="b1w-gI-D7V"/>
+                                            <segue destination="86i-Ds-q14" kind="showDetail" id="b1w-gI-D7V"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -807,7 +824,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="H91-PE-ccc" kind="show" id="xvr-Dc-XNe"/>
+                                            <segue destination="H91-PE-ccc" kind="showDetail" id="xvr-Dc-XNe"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="he4-EJ-HEk">
@@ -846,7 +863,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="BSA-9S-RW9" kind="show" id="l7t-mm-qIU"/>
+                                            <segue destination="BSA-9S-RW9" kind="showDetail" id="l7t-mm-qIU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -889,7 +906,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ea8-jY-NJd" kind="show" id="3gf-xn-1Y2"/>
+                                            <segue destination="ea8-jY-NJd" kind="showDetail" id="3gf-xn-1Y2"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="N9x-B8-fPM">
@@ -928,7 +945,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="B92-xz-8Sj" kind="show" id="Nj8-kZ-zUw"/>
+                                            <segue destination="B92-xz-8Sj" kind="showDetail" id="Nj8-kZ-zUw"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -971,7 +988,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HFf-y8-7N7" kind="show" id="UdT-v5-gAG"/>
+                                            <segue destination="HFf-y8-7N7" kind="showDetail" id="UdT-v5-gAG"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -988,7 +1005,20 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epz-14-IKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2406" y="-1966"/>
+            <point key="canvasLocation" x="-3346" y="-1527"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="4Sm-Hr-Ogy">
+            <objects>
+                <splitViewController id="yhH-LX-pid" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="CeV-JB-usR" kind="relationship" relationship="masterViewController" id="evy-ng-WBH"/>
+                        <segue destination="dru-A0-Y3M" kind="relationship" relationship="detailViewController" id="hIE-bB-9QM"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0P-4S-hm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4983" y="-1170"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o0X-O2-2t2">
@@ -1006,12 +1036,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQs-hU-JTH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3180" y="-1966"/>
+            <point key="canvasLocation" x="-4119" y="-1527"/>
         </scene>
         <!--Projection-->
         <scene sceneID="fM5-ec-CY2">
             <objects>
-                <viewControllerPlaceholder storyboardName="Misc" referencedIdentifier="Projection" id="HFf-y8-7N7" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Misc" referencedIdentifier="Projection" id="HFf-y8-7N7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CEp-8P-PKh"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKi-aC-G0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2634" y="-1389"/>
@@ -1019,7 +1051,9 @@
         <!--INVMarker-->
         <scene sceneID="gdG-su-bTb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVMarker" id="yus-K0-BDF" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVMarker" id="yus-K0-BDF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Py7-9k-f9o"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etp-4T-WrW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2631" y="-1552"/>
@@ -1027,7 +1061,9 @@
         <!--CameraMove-->
         <scene sceneID="hEt-37-dev">
             <objects>
-                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraMove" id="JhW-Hu-tiA" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraMove" id="JhW-Hu-tiA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ErX-GG-nTI"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTE-3k-cM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2620" y="-1501"/>
@@ -1035,7 +1071,9 @@
         <!--INVMarkerOverlap-->
         <scene sceneID="JgF-3G-fxw">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVMarkerOverlap" id="zCk-Rn-3Mq" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVMarkerOverlap" id="zCk-Rn-3Mq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6PA-t3-Sh4"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2W-Lt-BUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2427" y="-1552"/>
@@ -1043,7 +1081,9 @@
         <!--INVCameraUpdateParams-->
         <scene sceneID="iNm-ow-S63">
             <objects>
-                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="INVCameraUpdateParams" id="yNs-4X-CTE" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="INVCameraUpdateParams" id="yNs-4X-CTE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qJ1-CN-hik"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbq-RA-Fa6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2372" y="-1501"/>
@@ -1051,7 +1091,9 @@
         <!--MapGesture-->
         <scene sceneID="f3f-r1-zEs">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapGesture" id="E5b-ub-cYw" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapGesture" id="E5b-ub-cYw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kes-v3-nsd"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCo-4S-tx4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2438" y="-1476"/>
@@ -1059,7 +1101,9 @@
         <!--ShapeClickEvent-->
         <scene sceneID="S0C-1U-vJ6">
             <objects>
-                <viewControllerPlaceholder storyboardName="ClickEvent" referencedIdentifier="ShapeClickEvent" id="BSA-9S-RW9" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ClickEvent" referencedIdentifier="ShapeClickEvent" id="BSA-9S-RW9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oEN-G6-FEv"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDf-Fn-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2398" y="-1444"/>
@@ -1077,7 +1121,9 @@
         <!--MapPadding-->
         <scene sceneID="QF8-mA-TPe">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapPadding" id="Qph-qD-ftB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapPadding" id="Qph-qD-ftB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="QLu-8v-KAP"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Sj-4h-ify" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2622" y="-1472"/>
@@ -1085,7 +1131,9 @@
         <!--MapClickEvent-->
         <scene sceneID="ojF-TN-MY1">
             <objects>
-                <viewControllerPlaceholder storyboardName="ClickEvent" referencedIdentifier="MapClickEvent" id="H91-PE-ccc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="ClickEvent" referencedIdentifier="MapClickEvent" id="H91-PE-ccc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1XJ-yI-T71"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpl-1Q-PIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2611" y="-1444"/>
@@ -1093,7 +1141,9 @@
         <!--UserTrackingMode-->
         <scene sceneID="Mza-5O-bVO">
             <objects>
-                <viewControllerPlaceholder storyboardName="Location" referencedIdentifier="UserTrackingMode" id="ea8-jY-NJd" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Location" referencedIdentifier="UserTrackingMode" id="ea8-jY-NJd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sCI-3l-Ymr"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9w-GW-2LG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2592" y="-1416"/>
@@ -1101,7 +1151,9 @@
         <!--INVInfoWindow-->
         <scene sceneID="hfc-HU-FnD">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVInfoWindow" id="7bM-UM-1De" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVInfoWindow" id="7bM-UM-1De" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ayW-nj-kXS"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K8H-vL-aPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2202" y="-1552"/>
@@ -1109,7 +1161,9 @@
         <!--INVPolygon-->
         <scene sceneID="s5R-o1-4BM">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVPolygon" id="MtD-6h-NhO" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVPolygon" id="MtD-6h-NhO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ATi-cK-agO"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLf-jE-vaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2018" y="-1552"/>
@@ -1117,7 +1171,9 @@
         <!--CameraFitBounds-->
         <scene sceneID="by1-5J-vse">
             <objects>
-                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraFitBounds" id="ak4-j5-0RY" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraFitBounds" id="ak4-j5-0RY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tfQ-BB-zTP"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gdW-As-Rm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2104" y="-1501"/>
@@ -1125,7 +1181,9 @@
         <!--MapController-->
         <scene sceneID="Uq3-qT-Opn">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapController" id="3AA-GK-Wp3" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MapOptions" referencedIdentifier="MapController" id="3AA-GK-Wp3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WnI-hB-z2F"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2It-WF-g1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2250" y="-1476"/>
@@ -1133,7 +1191,9 @@
         <!--INVPolyline-->
         <scene sceneID="JBy-8z-sxx">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVPolyline" id="HtC-US-GVI" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVPolyline" id="HtC-US-GVI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ijc-dJ-Dm1"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsH-dY-c85" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1846" y="-1552"/>
@@ -1141,7 +1201,9 @@
         <!--CameraEvents-->
         <scene sceneID="YKT-og-Hwh">
             <objects>
-                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraEvents" id="Itl-2x-d0b" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Camera" referencedIdentifier="CameraEvents" id="Itl-2x-d0b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="imh-nt-6sK"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="thz-eI-uOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1896" y="-1501"/>
@@ -1149,7 +1211,9 @@
         <!--INVCircle-->
         <scene sceneID="ZF3-aR-FeH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVCircle" id="8on-qf-Sqg" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="INVCircle" id="8on-qf-Sqg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xwl-HZ-tac"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uId-To-nQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1546" y="-1552"/>
@@ -1167,7 +1231,9 @@
         <!--GlobalZIndex-->
         <scene sceneID="Hi3-FE-Bxb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="GlobalZIndex" id="hd7-v6-5S6" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Shape" referencedIdentifier="GlobalZIndex" id="hd7-v6-5S6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DhZ-Sv-RcJ"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dUk-hD-3y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1382" y="-1552"/>
@@ -1193,4 +1259,7 @@
             <point key="canvasLocation" x="-2036" y="-1476"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hIE-bB-9QM"/>
+    </inferredMetricsTieBreakers>
 </document>

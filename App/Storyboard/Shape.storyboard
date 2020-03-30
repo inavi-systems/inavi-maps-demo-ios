@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zCl-60-Bph">
+            <objects>
+                <navigationController storyboardIdentifier="INVPolygon" id="Yud-xI-wSX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Dy-Hp-8Py">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vxU-Wg-ffe" kind="relationship" relationship="rootViewController" id="srI-oS-l9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceR-5i-VeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6436" y="-280"/>
+        </scene>
         <!--INVPolygon-->
         <scene sceneID="8c3-e9-hZx">
             <objects>
-                <viewController storyboardIdentifier="INVPolygon" title="INVPolygon" id="vxU-Wg-ffe" customClass="INVPolygonViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVPolygon" id="vxU-Wg-ffe" customClass="INVPolygonViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tdP-Zq-m5p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,6 +46,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vXD-HP-Nrm"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVPolygon" id="U8v-D5-dBM"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="xGe-PT-MVM" id="zms-cK-koG"/>
@@ -37,12 +54,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hcm-5n-TL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3766" y="-1012"/>
+            <point key="canvasLocation" x="-5633" y="-280"/>
         </scene>
         <!--INVPolyline-->
         <scene sceneID="fDj-AS-oDg">
             <objects>
-                <viewController storyboardIdentifier="INVPolyline" title="INVPolyline" id="r6M-jj-Mcu" customClass="INVPolylineViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVPolyline" id="r6M-jj-Mcu" customClass="INVPolylineViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s21-I0-c9Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,6 +78,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5qX-xP-PV6"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVPolyline" id="gbA-eA-goV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="22m-l3-vB9" id="74T-Sn-tPH"/>
@@ -68,12 +86,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DPL-hD-fuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3150" y="-1012"/>
+            <point key="canvasLocation" x="-4004" y="-281"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="duM-I5-AsP">
+            <objects>
+                <navigationController storyboardIdentifier="INVPolyline" id="GAP-ov-MEl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z3c-Ks-yCV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r6M-jj-Mcu" kind="relationship" relationship="rootViewController" id="Lcg-1Z-0gB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wow-HQ-If8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4807" y="-281"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uJe-1n-fen">
+            <objects>
+                <navigationController storyboardIdentifier="INVCircle" id="zpm-AD-bJj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6nt-uA-XIg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cVB-hN-9SH" kind="relationship" relationship="rootViewController" id="5Iq-ta-ppB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nei-6Q-4fR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6436" y="435"/>
         </scene>
         <!--INVCircle-->
         <scene sceneID="67J-ed-idO">
             <objects>
-                <viewController storyboardIdentifier="INVCircle" title="INVCircle" id="cVB-hN-9SH" customClass="INVCircleViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVCircle" id="cVB-hN-9SH" customClass="INVCircleViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCi-U7-oh8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +142,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R6Z-qE-jgD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVCircle" id="hyh-OR-C4e"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="8cq-fJ-weF" id="DTD-DB-8fx"/>
@@ -99,12 +150,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMU-xv-zr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1925" y="-1013"/>
+            <point key="canvasLocation" x="-5633" y="435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cBS-Rh-zMd">
+            <objects>
+                <navigationController storyboardIdentifier="GlobalZIndex" id="3Jf-kJ-Xud" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GwR-sq-ItO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MzZ-y4-H7Z" kind="relationship" relationship="rootViewController" id="1JQ-cN-zcc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ulv-Wh-HAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4807" y="435"/>
         </scene>
         <!--Global Z-Index-->
         <scene sceneID="m8k-GX-Q6w">
             <objects>
-                <viewController storyboardIdentifier="GlobalZIndex" title="Global Z-Index" id="MzZ-y4-H7Z" customClass="GlobalZIndexViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MzZ-y4-H7Z" customClass="GlobalZIndexViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNG-aK-y1L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +232,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RiW-Y7-ESl"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Global Z-Index" id="KNP-Cb-GZG"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="SIP-HN-KMJ" id="Dge-Ku-acy"/>
@@ -172,12 +240,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8U-n7-eC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1314" y="-1013"/>
+            <point key="canvasLocation" x="-4004" y="435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hFd-c0-8qs">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnM-xq-FGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="INVMarker" id="0Cg-xG-c6o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JvO-Ke-a4Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dgj-fg-7Sy" kind="relationship" relationship="rootViewController" id="Rde-QU-Hbn"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-6435" y="-1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RYS-Lg-boT">
+            <objects>
+                <navigationController storyboardIdentifier="INVMarkerOverlap" id="nU6-ag-diT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pNi-ar-b3I">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2dr-C2-EYP" kind="relationship" relationship="rootViewController" id="jAu-P1-mh1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C9-F6-RBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4806" y="-1013"/>
         </scene>
         <!--INVMarker-->
         <scene sceneID="ejg-he-GbS">
             <objects>
-                <viewController storyboardIdentifier="INVMarker" title="INVMarker" id="Dgj-fg-7Sy" customClass="INVMarkerViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVMarker" id="Dgj-fg-7Sy" customClass="INVMarkerViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWP-GB-BAo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,6 +296,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mgi-n6-JE7"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVMarker" id="5mZ-9W-6dx"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="adl-Vz-xc6" id="Nfz-7L-sST"/>
@@ -208,7 +309,7 @@
         <!--INVMarker Overlap-->
         <scene sceneID="vfP-KE-nab">
             <objects>
-                <viewController storyboardIdentifier="INVMarkerOverlap" title="INVMarker Overlap" id="2dr-C2-EYP" customClass="INVMarkerOverlapViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVMarker Overlap" id="2dr-C2-EYP" customClass="INVMarkerOverlapViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYt-XT-YBg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,6 +402,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mPf-lt-qQ2"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVMarker Overlap" id="5U3-eV-144"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="Ebf-7w-hr6" id="qP0-hu-L0n"/>
@@ -308,12 +410,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8X1-1o-OMV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5009" y="-1012"/>
+            <point key="canvasLocation" x="-4003" y="-1014"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Z9L-hy-kO3">
+            <objects>
+                <navigationController storyboardIdentifier="INVInfoWindow" id="FyN-17-46r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZyF-Tw-wIP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="087-8T-bRE" kind="relationship" relationship="rootViewController" id="mXU-nK-Bwk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXT-dJ-MiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3178" y="-1014"/>
         </scene>
         <!--INVInfoWindow-->
         <scene sceneID="5bz-HN-p1y">
             <objects>
-                <viewController storyboardIdentifier="INVInfoWindow" title="INVInfoWindow" automaticallyAdjustsScrollViewInsets="NO" id="087-8T-bRE" customClass="INVInfoWindowViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVInfoWindow" automaticallyAdjustsScrollViewInsets="NO" id="087-8T-bRE" customClass="INVInfoWindowViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iRL-0x-sdT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,6 +492,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tNt-YW-0na"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVInfoWindow" id="1LJ-hp-Aos"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="YH6-fr-2OK" id="Qjw-lG-tOk"/>
@@ -381,12 +500,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIc-u1-Ll7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4386" y="-1012"/>
+            <point key="canvasLocation" x="-2377" y="-1015"/>
         </scene>
         <!--INVRoute-->
         <scene sceneID="nCG-MY-Q7N">
             <objects>
-                <viewController storyboardIdentifier="INVRoute" title="INVRoute" id="KEN-l2-ccQ" userLabel="INVRoute" customClass="INVRouteViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVRoute" id="KEN-l2-ccQ" userLabel="INVRoute" customClass="INVRouteViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jIE-rQ-m2e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,6 +622,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h0H-Mg-kKS"/>
                     </view>
+                    <navigationItem key="navigationItem" title="INVRoute" id="0Ef-M1-yb8"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="lbProgress" destination="xo0-hi-Wyf" id="UuA-dF-B5g"/>
@@ -514,7 +634,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OtD-d1-WLy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2536" y="-1013"/>
+            <point key="canvasLocation" x="-2378" y="-280"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oRg-2E-Vh5">
+            <objects>
+                <navigationController storyboardIdentifier="INVRoute" id="Mkh-82-g60" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pZx-JA-x0a">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KEN-l2-ccQ" kind="relationship" relationship="rootViewController" id="eEa-Cl-C3W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMg-Cb-pLq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3178" y="-281"/>
         </scene>
     </scenes>
 </document>
