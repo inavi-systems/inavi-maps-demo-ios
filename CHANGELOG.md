@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.4.4 - 2020-04-21
+
+### Features
+- 지도의 최소/최대 기울기 각도를 설정하는 API 추가
+  - `InaviMapView#minimumTilt`, `InaviMapView#maximumTilt`
+
+### Improvements
+- SDK 안정성 향상
+
 ## 0.4.3 - 2020-03-30
 
 ### ETC

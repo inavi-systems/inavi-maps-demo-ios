@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--User Tracking Mode-->
         <scene sceneID="Fvo-Zf-IKO">
             <objects>
-                <viewController title="User Tracking Mode" automaticallyAdjustsScrollViewInsets="NO" id="jHk-iM-DQH" customClass="UserTrackingModeViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="User Tracking Mode" automaticallyAdjustsScrollViewInsets="NO" id="jHk-iM-DQH" customClass="UserTrackingModeViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rTa-Md-m5r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KSu-Q6-aTz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OPI-2H-TpT"/>
+                    <navigationItem key="navigationItem" title="User Tracking Mode" id="OPI-2H-TpT"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="mapView" destination="jmq-4c-yAg" id="wWj-r7-9cC"/>
@@ -108,7 +108,7 @@
         <!--Location Icon-->
         <scene sceneID="mgZ-l8-Cvz">
             <objects>
-                <viewController title="Location Icon" id="SFa-uY-MUT" customClass="LocationIconViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Location Icon" id="SFa-uY-MUT" customClass="LocationIconViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PIk-i5-vR1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
