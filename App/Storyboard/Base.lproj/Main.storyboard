@@ -27,7 +27,7 @@
         <!--InaviMapView-->
         <scene sceneID="ON2-uO-zcu">
             <objects>
-                <viewController title="InaviMapView" id="44n-Fw-LxC" customClass="MapViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="InaviMapView" id="44n-Fw-LxC" customClass="MapViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tqu-iB-tsv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,7 +58,7 @@
         <!--iNavi Maps Demo-->
         <scene sceneID="Tnd-db-NJ8">
             <objects>
-                <tableViewController id="n3C-Az-33r" customClass="MainViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="n3C-Az-33r" customClass="MainViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sZF-Rp-r06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

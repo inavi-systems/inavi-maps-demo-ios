@@ -1,5 +1,14 @@
 # Change Log
 
+## 0.4.5 - 2020-04-29
+
+### Features
+- 정보 창 표출 상태 변경 시 애니메이션 기본값 비활성화로 변경
+- 정보 창 표출 상태 변경 시 애니메이션 설정 API 추가
+  - `INVInfoWindow#isTransitionEnabled`
+- 줌 또는 회전 제스처 시 기준점을 지도 중심으로 설정하는 API 추가
+  - `InaviMapView#focalPointCenter`
+
 ## 0.4.4 - 2020-04-21
 
 ### Features

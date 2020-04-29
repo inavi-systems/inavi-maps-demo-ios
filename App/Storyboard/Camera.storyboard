@@ -11,7 +11,7 @@
         <!--Camera Move-->
         <scene sceneID="qgO-yO-KbD">
             <objects>
-                <viewController title="Camera Move" automaticallyAdjustsScrollViewInsets="NO" id="1XS-y4-77C" customClass="CameraMoveViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera Move" automaticallyAdjustsScrollViewInsets="NO" id="1XS-y4-77C" customClass="CameraMoveViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0r-G3-fmZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,7 +122,7 @@
         <!--INVCameraUpdateParams-->
         <scene sceneID="kRd-Wt-gAs">
             <objects>
-                <viewController title="INVCameraUpdateParams" automaticallyAdjustsScrollViewInsets="NO" id="h0c-zb-56U" customClass="INVCameraUpdateParamsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVCameraUpdateParams" automaticallyAdjustsScrollViewInsets="NO" id="h0c-zb-56U" customClass="INVCameraUpdateParamsViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zN2-UZ-LIg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
         <!--Camera Move to Fit Bounds-->
         <scene sceneID="5bT-be-Bkj">
             <objects>
-                <viewController id="Bsq-Of-54P" customClass="CameraFitBoundsViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bsq-Of-54P" customClass="CameraFitBoundsViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTU-7K-GDV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evP-fV-o5E" customClass="UIActionButton" customModule="iNaviMapsDemoiOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evP-fV-o5E" customClass="UIActionButton" customModule="iNaviMapsDemo" customModuleProvider="target">
                                 <rect key="frame" x="334" y="689" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16470588235294117" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -325,7 +325,7 @@
         <!--Camera Events-->
         <scene sceneID="k3P-p6-m2O">
             <objects>
-                <viewController title="Camera Events" id="qD9-lL-eGQ" customClass="CameraEventViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Camera Events" id="qD9-lL-eGQ" customClass="CameraEventViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I3A-fo-ynN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -341,7 +341,7 @@
                                     <constraint firstAttribute="height" constant="50" id="GuA-vG-Irp"/>
                                 </constraints>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-Tq-FSP" customClass="UIInsetLabel" customModule="iNaviMapsDemoiOS" customModuleProvider="target">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-Tq-FSP" customClass="UIInsetLabel" customModule="iNaviMapsDemo" customModuleProvider="target">
                                 <rect key="frame" x="97" y="429" width="220" height="17"/>
                                 <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
@@ -365,7 +365,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwx-dN-v0L" customClass="UIActionButton" customModule="iNaviMapsDemoiOS" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwx-dN-v0L" customClass="UIActionButton" customModule="iNaviMapsDemo" customModuleProvider="target">
                                 <rect key="frame" x="334" y="689" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.16470588235294117" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

@@ -27,7 +27,7 @@
         <!--Marker Clustering-->
         <scene sceneID="elF-eZ-fXX">
             <objects>
-                <viewController title="Marker Clustering" id="zsW-Q0-psf" customClass="MarkerClusteringViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Marker Clustering" id="zsW-Q0-psf" customClass="MarkerClusteringViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="htd-jH-pAQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

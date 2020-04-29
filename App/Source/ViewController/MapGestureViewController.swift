@@ -17,6 +17,8 @@ class MapGestureViewController: MapViewController {
             self.mapView?.isTiltGesturesEnabled = sender.isOn
         case 3: // rotate
             self.mapView?.isRotateGesturesEnabled = sender.isOn
+        case 4: // zoom/rotate geture by center of mapview
+            self.mapView?.isFocalPointCenter = sender.isOn
         default:
             break
         }

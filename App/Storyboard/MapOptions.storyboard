@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Map Padding-->
         <scene sceneID="bre-aw-2C7">
             <objects>
-                <viewController title="Map Padding" id="u6q-Rf-xLv" customClass="MapPaddingViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map Padding" id="u6q-Rf-xLv" customClass="MapPaddingViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gNS-jt-KPa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
         <!--Map Gesture-->
         <scene sceneID="FnJ-4h-3bW">
             <objects>
-                <viewController title="Map Gesture" id="rzY-Sc-tuf" customClass="MapGestureViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map Gesture" id="rzY-Sc-tuf" customClass="MapGestureViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Ew-Cm-oPP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
                                 <rect key="frame" x="0.0" y="724" width="414" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-cE-bKE" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="421.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="586.5" height="50"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9C-l7-1M2" userLabel="Switch1">
                                                 <rect key="frame" x="15" y="9.5" width="51" height="31"/>
@@ -188,6 +188,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-9U-KKn" userLabel="Switch5">
+                                                <rect key="frame" x="416.5" y="9.5" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="respondToMapGestureSettings:" destination="rzY-Sc-tuf" eventType="valueChanged" id="QIc-ag-m6G"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 중심 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb4-pI-aUU" userLabel="Label5">
+                                                <rect key="frame" x="473.5" y="14.5" width="98" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -198,15 +210,19 @@
                                             <constraint firstItem="c9C-l7-1M2" firstAttribute="leading" secondItem="JzK-cE-bKE" secondAttribute="leading" constant="15" id="AnG-mG-fZR"/>
                                             <constraint firstItem="r0l-y6-AvS" firstAttribute="leading" secondItem="c9C-l7-1M2" secondAttribute="trailing" constant="8" id="D95-05-8kh"/>
                                             <constraint firstItem="LPC-Ug-1Vq" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="Mx6-5g-7Dy"/>
-                                            <constraint firstAttribute="trailing" secondItem="Vn9-7M-q8H" secondAttribute="trailing" constant="15" id="PFo-4F-qsb"/>
                                             <constraint firstItem="Aup-QK-39i" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="TXV-vS-z37"/>
                                             <constraint firstItem="LPC-Ug-1Vq" firstAttribute="leading" secondItem="im9-2R-cnR" secondAttribute="trailing" constant="10" id="Xlo-BR-WFy"/>
                                             <constraint firstItem="im9-2R-cnR" firstAttribute="leading" secondItem="fPn-dm-FLw" secondAttribute="trailing" constant="8" id="cff-kr-HA1"/>
                                             <constraint firstItem="fPn-dm-FLw" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="dl9-rY-ePC"/>
                                             <constraint firstItem="Vn9-7M-q8H" firstAttribute="leading" secondItem="Aup-QK-39i" secondAttribute="trailing" constant="8" id="dsW-ad-r08"/>
+                                            <constraint firstAttribute="trailing" secondItem="eb4-pI-aUU" secondAttribute="trailing" constant="15" id="hTe-TF-maf"/>
                                             <constraint firstItem="44B-8E-Dzc" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="ig7-2o-5Qs"/>
                                             <constraint firstItem="fPn-dm-FLw" firstAttribute="leading" secondItem="r0l-y6-AvS" secondAttribute="trailing" constant="10" id="jJf-2f-wYM"/>
+                                            <constraint firstItem="FnD-9U-KKn" firstAttribute="leading" secondItem="Vn9-7M-q8H" secondAttribute="trailing" constant="10" id="jaW-rF-mFQ"/>
+                                            <constraint firstItem="eb4-pI-aUU" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="l6m-de-VTS"/>
+                                            <constraint firstItem="eb4-pI-aUU" firstAttribute="leading" secondItem="FnD-9U-KKn" secondAttribute="trailing" constant="8" id="lUB-gM-smG"/>
                                             <constraint firstItem="Vn9-7M-q8H" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="nRf-GE-Hdf"/>
+                                            <constraint firstItem="FnD-9U-KKn" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="q9e-Lg-xMA"/>
                                             <constraint firstItem="44B-8E-Dzc" firstAttribute="leading" secondItem="LPC-Ug-1Vq" secondAttribute="trailing" constant="8" id="rhj-Fj-dW0"/>
                                         </constraints>
                                     </view>
@@ -242,12 +258,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ooQ-rP-7RU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-270" y="-1013"/>
+            <point key="canvasLocation" x="-271.01449275362319" y="-1013.1696428571428"/>
         </scene>
         <!--Map Controller-->
         <scene sceneID="00A-H7-BSZ">
             <objects>
-                <viewController title="Map Controller" id="XeH-L9-FGQ" customClass="MapControllerViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map Controller" id="XeH-L9-FGQ" customClass="MapControllerViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WCu-gJ-MM9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +385,7 @@
         <!--Map Restriction-->
         <scene sceneID="GAo-qh-ltf">
             <objects>
-                <viewController title="Map Restriction" id="NvU-XH-K3L" userLabel="Map Restriction" customClass="MapRestrictionViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map Restriction" id="NvU-XH-K3L" userLabel="Map Restriction" customClass="MapRestrictionViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FM7-ZV-Cc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
