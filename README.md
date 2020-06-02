@@ -25,7 +25,6 @@ git lfs install
 
 ### Podfile 구성
 다음과 같이 Podfile을 생성하여 아이나비 지도 SDK에 대한 Pod 의존성을 설정합니다.
-> `아이나비 지도 iOS SDK는 CocoaPods를 통해 배포되며, Beta 기간 종료 후에는 정책에 맞춰 변경될 수 있습니다. (사전 공지 예정)`
 
 ```ruby
 # Podfile
