@@ -60,12 +60,16 @@ class INVRouteViewController: MapViewController {
     func shapeInit() {
         routeShape.delegate         = self
         routeShape.links            = links
-        routeShape.lineWidth        = 8
+        routeShape.lineWidth        = 10
         routeShape.strokeWidth      = 2
         routeShape.passLineColor    = .lightGray
         routeShape.passStrokeColor  = .white
         routeShape.mapView          = self.mapView
+        routeShape.patternImage     = INVImage(name: "inv_pattern_arrow")
+        routeShape.patternMargin    = 15
+        routeShape.patternScale        = 0.8
         
+
         passMarker.position = links[0].coords[0]
         passMarker.mapView = self.mapView
         
@@ -88,7 +92,7 @@ extension INVRouteViewController {
         let params = INVCameraUpdateParams()
         params.target(to: passMarker.position)
         params.zoom(to: 16.0)
-        params.tilt(to: 60.0)
+        params.tilt(to: 40.0)
         params.bearing(to: Double(routeShape.passAngle))
         
         let cameraUpdate = INVCameraUpdate.init(params: params)
