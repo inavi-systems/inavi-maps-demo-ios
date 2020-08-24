@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,7 @@
         <!--INVPolygon-->
         <scene sceneID="8c3-e9-hZx">
             <objects>
-                <viewController title="INVPolygon" id="vxU-Wg-ffe" customClass="INVPolygonViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVPolygon" id="vxU-Wg-ffe" customClass="INVPolygonViewContoller" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tdP-Zq-m5p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
         <!--INVPolyline-->
         <scene sceneID="fDj-AS-oDg">
             <objects>
-                <viewController title="INVPolyline" id="r6M-jj-Mcu" customClass="INVPolylineViewContoller" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVPolyline" id="r6M-jj-Mcu" customClass="INVPolylineViewContoller" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s21-I0-c9Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--INVCircle-->
         <scene sceneID="67J-ed-idO">
             <objects>
-                <viewController title="INVCircle" id="cVB-hN-9SH" customClass="INVCircleViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVCircle" id="cVB-hN-9SH" customClass="INVCircleViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCi-U7-oh8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,7 @@
         <!--Global Z-Index-->
         <scene sceneID="m8k-GX-Q6w">
             <objects>
-                <viewController id="MzZ-y4-H7Z" customClass="GlobalZIndexViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MzZ-y4-H7Z" customClass="GlobalZIndexViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TNG-aK-y1L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,6 @@
         <!--Navigation Controller-->
         <scene sceneID="hFd-c0-8qs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DnM-xq-FGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="INVMarker" id="0Cg-xG-c6o" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JvO-Ke-a4Y">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -255,6 +254,7 @@
                         <segue destination="Dgj-fg-7Sy" kind="relationship" relationship="rootViewController" id="Rde-QU-Hbn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnM-xq-FGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6435" y="-1013"/>
         </scene>
@@ -277,7 +277,7 @@
         <!--INVMarker-->
         <scene sceneID="ejg-he-GbS">
             <objects>
-                <viewController title="INVMarker" id="Dgj-fg-7Sy" customClass="INVMarkerViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVMarker" id="Dgj-fg-7Sy" customClass="INVMarkerViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWP-GB-BAo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -309,7 +309,7 @@
         <!--INVMarker Overlap-->
         <scene sceneID="vfP-KE-nab">
             <objects>
-                <viewController title="INVMarker Overlap" id="2dr-C2-EYP" customClass="INVMarkerOverlapViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVMarker Overlap" id="2dr-C2-EYP" customClass="INVMarkerOverlapViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYt-XT-YBg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,12 +322,12 @@
                                 <rect key="frame" x="0.0" y="724" width="414" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtZ-dj-pmd" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="628.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="822.5" height="50"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yw0-qB-6BK" userLabel="Switch1">
                                                 <rect key="frame" x="15" y="9.5" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="respondToAllowMarkerOverlap:" destination="2dr-C2-EYP" eventType="valueChanged" id="fqN-Cf-lhQ"/>
+                                                    <action selector="respondToAllowMarkerOverlap:" destination="2dr-C2-EYP" eventType="valueChanged" id="aMn-BN-X2q"/>
                                                 </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마커 겹침 허용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EuF-CR-HrG" userLabel="Label1">
@@ -339,7 +339,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VdJ-fW-BOl" userLabel="Switch2">
                                                 <rect key="frame" x="179.5" y="9.5" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="respondToAllowTitleOverlap:" destination="2dr-C2-EYP" eventType="valueChanged" id="Gau-IS-Nf5"/>
+                                                    <action selector="respondToAllowTitleOverlap:" destination="2dr-C2-EYP" eventType="valueChanged" id="0rM-LP-eyD"/>
                                                 </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="타이틀 겹침 허용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTn-nA-VMu" userLabel="Label2">
@@ -348,14 +348,26 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1cO-s2-dmj" userLabel="Switch3">
-                                                <rect key="frame" x="358.5" y="9.5" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kkA-CH-G0G" userLabel="Switch3">
+                                                <rect key="frame" x="356.5" y="9.5" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="respondToAnimationEnabled:" destination="2dr-C2-EYP" eventType="valueChanged" id="Uoz-37-b88"/>
+                                                    <action selector="respondToAllowSymbolOverlapEnabled:" destination="2dr-C2-EYP" eventType="valueChanged" id="h1N-7u-pyu"/>
                                                 </connections>
                                             </switch>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마커에 Fade 애니메이션 적용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-kW-o06" userLabel="Label3">
-                                                <rect key="frame" x="415.5" y="14.5" width="198" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 심볼 겹침 허용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lZ-J0-dZt" userLabel="Label3">
+                                                <rect key="frame" x="413.5" y="14.5" width="131" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1cO-s2-dmj" userLabel="Switch4">
+                                                <rect key="frame" x="552.5" y="9.5" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="respondToAnimationEnabled:" destination="2dr-C2-EYP" eventType="valueChanged" id="ngg-DK-Ffg"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마커에 Fade 애니메이션 적용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGd-kW-o06" userLabel="Label4">
+                                                <rect key="frame" x="609.5" y="14.5" width="198" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -364,18 +376,22 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="Yw0-qB-6BK" firstAttribute="leading" secondItem="xtZ-dj-pmd" secondAttribute="leading" constant="15" id="18c-6j-3kK"/>
+                                            <constraint firstItem="5lZ-J0-dZt" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="70c-vR-XkR"/>
                                             <constraint firstItem="EuF-CR-HrG" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="Bii-Dg-yqE"/>
                                             <constraint firstItem="uTn-nA-VMu" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="C8K-gS-jYQ"/>
                                             <constraint firstItem="iGd-kW-o06" firstAttribute="leading" secondItem="1cO-s2-dmj" secondAttribute="trailing" constant="8" id="Gvp-rX-Luj"/>
                                             <constraint firstItem="VdJ-fW-BOl" firstAttribute="leading" secondItem="EuF-CR-HrG" secondAttribute="trailing" constant="10" id="I5r-0A-0E2"/>
                                             <constraint firstItem="1cO-s2-dmj" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="Qih-0G-YnI"/>
+                                            <constraint firstItem="kkA-CH-G0G" firstAttribute="leading" secondItem="uTn-nA-VMu" secondAttribute="trailing" constant="8" id="TpD-nG-Quf"/>
                                             <constraint firstItem="iGd-kW-o06" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="XyT-zH-uZs"/>
-                                            <constraint firstItem="1cO-s2-dmj" firstAttribute="leading" secondItem="uTn-nA-VMu" secondAttribute="trailing" constant="10" id="d7s-ki-JJt"/>
+                                            <constraint firstItem="5lZ-J0-dZt" firstAttribute="leading" secondItem="kkA-CH-G0G" secondAttribute="trailing" constant="8" id="c9R-8u-e7T"/>
+                                            <constraint firstItem="kkA-CH-G0G" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="daL-SY-kUH"/>
                                             <constraint firstItem="Yw0-qB-6BK" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="lmy-If-nuQ"/>
                                             <constraint firstItem="uTn-nA-VMu" firstAttribute="leading" secondItem="VdJ-fW-BOl" secondAttribute="trailing" constant="8" id="lq6-5e-u1z"/>
                                             <constraint firstItem="EuF-CR-HrG" firstAttribute="leading" secondItem="Yw0-qB-6BK" secondAttribute="trailing" constant="8" id="q1c-Kh-Y1h"/>
                                             <constraint firstItem="VdJ-fW-BOl" firstAttribute="centerY" secondItem="xtZ-dj-pmd" secondAttribute="centerY" id="soY-hM-JSY"/>
                                             <constraint firstAttribute="trailing" secondItem="iGd-kW-o06" secondAttribute="trailing" constant="15" id="soj-qo-bm8"/>
+                                            <constraint firstItem="1cO-s2-dmj" firstAttribute="leading" secondItem="5lZ-J0-dZt" secondAttribute="trailing" constant="8" id="vX2-ZX-UYX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -431,7 +447,7 @@
         <!--INVInfoWindow-->
         <scene sceneID="5bz-HN-p1y">
             <objects>
-                <viewController title="INVInfoWindow" automaticallyAdjustsScrollViewInsets="NO" id="087-8T-bRE" customClass="INVInfoWindowViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVInfoWindow" automaticallyAdjustsScrollViewInsets="NO" id="087-8T-bRE" customClass="INVInfoWindowViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iRL-0x-sdT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,7 +521,7 @@
         <!--INVRoute-->
         <scene sceneID="nCG-MY-Q7N">
             <objects>
-                <viewController title="INVRoute" id="KEN-l2-ccQ" userLabel="INVRoute" customClass="INVRouteViewController" customModule="iNaviMapsDemoiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="INVRoute" id="KEN-l2-ccQ" userLabel="INVRoute" customClass="INVRouteViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jIE-rQ-m2e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

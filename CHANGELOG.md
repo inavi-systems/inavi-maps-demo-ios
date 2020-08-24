@@ -1,4 +1,10 @@
 # Change Log
+## 0.5.1 - 2020-08-24
+
+### Features
+- 마커와 지도상 심볼 겹침을 설정하는 API 추가
+  - `INVMarker#isAllowOverlapSymbols`
+
 ## 0.5.0 - 2020-07-28
 
 ### Features
