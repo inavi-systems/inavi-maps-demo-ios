@@ -1,4 +1,15 @@
 # Change Log
+## 0.5.2 - 2020-09-22
+
+### Features
+- 지도 초기옵션 속성 추가
+  - `INVMapOptions#minimumZoomLevel`, `INVMapOptions#maximumZoomLevel`, `INVMapOptions#minimumTilt`, `INVMapOptions#maximumTilt`, `INVMapOptions#zoomGesturesEnabled`, `INVMapOptions#scrollGesturesEnabled`, `INVMapOptions#rotateGesturesEnabled`, `INVMapOptions#tiltGesturesEnabled`, `INVMapOptions#logoClickEnabled`, `INVMapOptions#focalPointCenter`
+- Interface Builder를 통한 지도 초기옵션 설정 지원
+
+### Bug Fixes
+- 마커의 아이콘 이미지가 간헐적으로 갱신되지 않는 오류 수정
+- `INVClusterManager#invalidate` 호출 시 간헐적으로 기존 마커가 지도에 남아있는 오류 수정
+
 ## 0.5.1 - 2020-08-24
 
 ### Features
