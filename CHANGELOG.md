@@ -1,4 +1,9 @@
 # Change Log
+## 0.6.0 - 2021-01-28
+### Features
+- 지도 심벌의 크기를 설정하는 API 추가
+  - `InaviMapView#symbolScale`, `INVMapOptions#symbolScale`
+- 지도의 기울기 각도 설정 시 건물 3D 효과 지원
 ## 0.5.3 - 2020-11-02
 
 ### Bug Fixes

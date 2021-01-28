@@ -88,7 +88,7 @@ INVMapSdk.sharedInstance().appKey = "YOUR_APP_KEY"
 
 
 ## License
-© 2019-2020. iNavi Systems Corp. All rights reserved.
+© 2019-2021. iNavi Systems Corp. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

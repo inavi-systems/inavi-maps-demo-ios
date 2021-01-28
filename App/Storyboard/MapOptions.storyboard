@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,7 +44,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="el2-RM-S8O" firstAttribute="leading" secondItem="A7d-pr-D5I" secondAttribute="leading" constant="15" id="EYC-hw-D7y"/>
                                             <constraint firstItem="PyY-nL-UQz" firstAttribute="centerY" secondItem="A7d-pr-D5I" secondAttribute="centerY" id="icC-x9-vma"/>
@@ -53,7 +54,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="A7d-pr-D5I" secondAttribute="trailing" id="9dY-fw-HVY"/>
                                     <constraint firstAttribute="height" constant="50" id="P6J-fJ-629"/>
@@ -64,7 +65,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="auV-fS-PNI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cGE-AA-8EJ" firstAttribute="trailing" secondItem="gNS-jt-KPa" secondAttribute="trailing" id="CdI-in-2gC"/>
                             <constraint firstItem="PhM-bL-iy3" firstAttribute="bottom" secondItem="cGE-AA-8EJ" secondAttribute="top" id="EFC-5y-Bkx"/>
@@ -78,7 +80,6 @@
                             <constraint firstItem="2N7-HG-fZi" firstAttribute="trailing" secondItem="PhM-bL-iy3" secondAttribute="trailing" constant="-100" id="wW2-0q-gwz"/>
                             <constraint firstItem="2N7-HG-fZi" firstAttribute="leading" secondItem="PhM-bL-iy3" secondAttribute="leading" constant="25" id="x77-dN-Bzw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="auV-fS-PNI"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map Padding" id="GVd-Vk-qpa"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -139,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="724" width="414" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-cE-bKE" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="586.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="585.5" height="50"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9C-l7-1M2" userLabel="Switch1">
                                                 <rect key="frame" x="15" y="9.5" width="51" height="31"/>
@@ -195,13 +196,13 @@
                                                 </connections>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도 중심 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb4-pI-aUU" userLabel="Label5">
-                                                <rect key="frame" x="473.5" y="14.5" width="98" height="21"/>
+                                                <rect key="frame" x="473.5" y="14.5" width="97" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="c9C-l7-1M2" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="4cD-BI-MmL"/>
                                             <constraint firstItem="im9-2R-cnR" firstAttribute="centerY" secondItem="JzK-cE-bKE" secondAttribute="centerY" id="4lR-Wh-zPz"/>
@@ -227,7 +228,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="JzK-cE-bKE" firstAttribute="height" secondItem="Z4X-d7-Ub3" secondAttribute="height" id="0xI-cF-t26"/>
                                     <constraint firstItem="JzK-cE-bKE" firstAttribute="top" secondItem="Z4X-d7-Ub3" secondAttribute="top" id="93r-xP-hzg"/>
@@ -238,7 +239,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nZf-St-Z5S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Z4X-d7-Ub3" firstAttribute="leading" secondItem="3Ew-Cm-oPP" secondAttribute="leading" id="BUE-VH-8ri"/>
                             <constraint firstItem="Z4X-d7-Ub3" firstAttribute="trailing" secondItem="3Ew-Cm-oPP" secondAttribute="trailing" id="CGW-BQ-gCp"/>
@@ -248,7 +250,6 @@
                             <constraint firstItem="HQA-Vg-g4I" firstAttribute="top" secondItem="nZf-St-Z5S" secondAttribute="top" id="ijK-9d-hqz"/>
                             <constraint firstItem="HQA-Vg-g4I" firstAttribute="bottom" secondItem="Z4X-d7-Ub3" secondAttribute="top" id="qZu-6k-4hO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nZf-St-Z5S"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map Gesture" id="kuh-N0-nTZ"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -327,7 +328,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="Dr2-9W-Nw6" firstAttribute="centerY" secondItem="kik-2E-bfS" secondAttribute="centerY" id="4FP-69-eig"/>
                                             <constraint firstItem="Uhr-XI-l1a" firstAttribute="leading" secondItem="Jyj-L2-HN0" secondAttribute="trailing" constant="8" id="95e-9F-KIE"/>
@@ -349,7 +350,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="kik-2E-bfS" firstAttribute="height" secondItem="MLz-x0-vBp" secondAttribute="height" id="Bi4-Vy-qtP"/>
                                     <constraint firstAttribute="height" constant="50" id="Jhd-dm-3Rn"/>
@@ -360,7 +361,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Yci-ol-qEf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MLz-x0-vBp" firstAttribute="leading" secondItem="WCu-gJ-MM9" secondAttribute="leading" id="8Ek-up-sZ0"/>
                             <constraint firstItem="OYg-VR-oaV" firstAttribute="leading" secondItem="WCu-gJ-MM9" secondAttribute="leading" id="F4r-dh-5kE"/>
@@ -370,7 +372,6 @@
                             <constraint firstItem="MLz-x0-vBp" firstAttribute="trailing" secondItem="WCu-gJ-MM9" secondAttribute="trailing" id="loY-46-zQF"/>
                             <constraint firstItem="OYg-VR-oaV" firstAttribute="top" secondItem="Yci-ol-qEf" secondAttribute="top" id="tbq-N9-OoP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Yci-ol-qEf"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map Controller" id="dix-NI-HYl"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -420,7 +421,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="810-Y3-J3T" firstAttribute="leading" secondItem="t9b-2Z-16W" secondAttribute="trailing" constant="8" id="PDd-bQ-3Mu"/>
                                             <constraint firstAttribute="trailing" secondItem="810-Y3-J3T" secondAttribute="trailing" id="Rfd-fW-diC"/>
@@ -430,7 +431,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="8Bd-jH-ch4" secondAttribute="trailing" id="4Pf-g9-NZT"/>
                                     <constraint firstItem="8Bd-jH-ch4" firstAttribute="top" secondItem="cvM-hX-Ehs" secondAttribute="top" id="CSH-ih-yu0"/>
@@ -441,7 +442,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iHP-Cn-Nq9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cvM-hX-Ehs" firstAttribute="leading" secondItem="FM7-ZV-Cc0" secondAttribute="leading" id="1Mq-YY-o4u"/>
                             <constraint firstItem="P7Q-IR-cBY" firstAttribute="centerY" secondItem="Ykt-VV-AIv" secondAttribute="centerY" id="9EH-a8-bwX"/>
@@ -453,7 +455,6 @@
                             <constraint firstItem="cvM-hX-Ehs" firstAttribute="bottom" secondItem="iHP-Cn-Nq9" secondAttribute="bottom" id="reH-EY-eIj"/>
                             <constraint firstItem="cvM-hX-Ehs" firstAttribute="trailing" secondItem="FM7-ZV-Cc0" secondAttribute="trailing" id="xj7-vA-sTK"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iHP-Cn-Nq9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Map Restriction" id="UdZ-M9-J16"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
@@ -497,8 +498,101 @@
             </objects>
             <point key="canvasLocation" x="-2696" y="-1013"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vKW-eC-R7c">
+            <objects>
+                <navigationController storyboardIdentifier="MapSymbolScale" id="ZWW-pq-0XI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5f-Hz-WRc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="G73-NL-T4e" kind="relationship" relationship="rootViewController" id="xCU-vQ-vhp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rx8-kM-UKf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="-311"/>
+        </scene>
+        <!--Map Symbol Scale-->
+        <scene sceneID="wzE-AW-gjb">
+            <objects>
+                <viewController title="Map Symbol Scale" id="G73-NL-T4e" customClass="MapSymbolScaleViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8vP-zC-Hdf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPy-Az-XDD" customClass="InaviMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yec-yn-PcO">
+                                <rect key="frame" x="0.0" y="724" width="414" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfZ-ig-qkG" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="50"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NYX-S6-ue1">
+                                                <rect key="frame" x="15" y="9.5" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="respondToSwitch:" destination="G73-NL-T4e" eventType="valueChanged" id="RMk-DE-KBM"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심벌 크게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-kU-YYG" userLabel="Label">
+                                                <rect key="frame" x="72" y="14.5" width="64" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="NYX-S6-ue1" firstAttribute="leading" secondItem="TfZ-ig-qkG" secondAttribute="leading" constant="15" id="HmH-Ym-Z2k"/>
+                                            <constraint firstItem="NYX-S6-ue1" firstAttribute="centerY" secondItem="TfZ-ig-qkG" secondAttribute="centerY" id="Irb-dA-kO6"/>
+                                            <constraint firstItem="q2p-kU-YYG" firstAttribute="centerY" secondItem="TfZ-ig-qkG" secondAttribute="centerY" id="Kun-so-A8u"/>
+                                            <constraint firstItem="q2p-kU-YYG" firstAttribute="leading" secondItem="NYX-S6-ue1" secondAttribute="trailing" constant="8" id="fxi-oO-fu9"/>
+                                            <constraint firstAttribute="trailing" secondItem="q2p-kU-YYG" secondAttribute="trailing" id="qbo-eA-ZfM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="TfZ-ig-qkG" firstAttribute="leading" secondItem="yec-yn-PcO" secondAttribute="leading" id="4w5-1X-qrc"/>
+                                    <constraint firstAttribute="height" constant="50" id="8d1-cL-ZW7"/>
+                                    <constraint firstItem="TfZ-ig-qkG" firstAttribute="top" secondItem="yec-yn-PcO" secondAttribute="top" id="QfK-yP-ksP"/>
+                                    <constraint firstAttribute="bottom" secondItem="TfZ-ig-qkG" secondAttribute="bottom" id="cRb-vm-AWe"/>
+                                    <constraint firstAttribute="trailing" secondItem="TfZ-ig-qkG" secondAttribute="trailing" id="hfF-BS-XFh"/>
+                                    <constraint firstItem="TfZ-ig-qkG" firstAttribute="height" secondItem="yec-yn-PcO" secondAttribute="height" id="oAR-4V-2qB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yX9-Ob-Mjf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yec-yn-PcO" firstAttribute="trailing" secondItem="8vP-zC-Hdf" secondAttribute="trailing" id="71G-FS-guL"/>
+                            <constraint firstItem="yec-yn-PcO" firstAttribute="bottom" secondItem="yX9-Ob-Mjf" secondAttribute="bottom" id="ECh-he-ldu"/>
+                            <constraint firstItem="yec-yn-PcO" firstAttribute="leading" secondItem="8vP-zC-Hdf" secondAttribute="leading" id="MCL-GJ-E0i"/>
+                            <constraint firstItem="tPy-Az-XDD" firstAttribute="trailing" secondItem="8vP-zC-Hdf" secondAttribute="trailing" id="pXK-In-isF"/>
+                            <constraint firstItem="tPy-Az-XDD" firstAttribute="top" secondItem="yX9-Ob-Mjf" secondAttribute="top" id="rfN-DG-rbx"/>
+                            <constraint firstItem="tPy-Az-XDD" firstAttribute="leading" secondItem="8vP-zC-Hdf" secondAttribute="leading" id="rqE-ar-sTt"/>
+                            <constraint firstItem="tPy-Az-XDD" firstAttribute="bottom" secondItem="yec-yn-PcO" secondAttribute="top" id="xW5-p8-v1j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Map Symbol Scale" id="fkh-Qh-ctE"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="tPy-Az-XDD" id="3bz-Mt-bpq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elQ-hx-CRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346" y="-311"/>
+        </scene>
     </scenes>
     <resources>
         <image name="crosshair" width="52" height="52"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
