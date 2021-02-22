@@ -1,4 +1,7 @@
 # Change Log
+## 0.6.1 - 2021-02-22
+### Improvements
+- SDK 안정성 향상
 ## 0.6.0 - 2021-01-28
 ### Features
 - 지도 심벌의 크기를 설정하는 API 추가

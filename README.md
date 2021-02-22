@@ -83,7 +83,7 @@ INVMapSdk.sharedInstance().appKey = "YOUR_APP_KEY"
 
 ## 주요 iNavi Maps SDK 안내
 추가적인 iNavi Maps SDK 사용법은 [iNavi Maps API 센터](http://imapsapi.inavi.com/)를 참고하시기 바랍니다.
-- [사업 제휴 문의](mailto:bong@inavi.kr)
+- [사업 제휴 문의](mailto:hongspan@inavi.kr)
 - [기술 문의](mailto:abskl@inavi.kr)
 
 
