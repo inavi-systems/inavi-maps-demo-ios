@@ -1,4 +1,10 @@
 # Change Log
+
+## 0.7.1 - 2022-03-30
+### Feature
+- 로고의 위치와 마진을 설정하는 API 추가
+  - `InaviMapView#logoViewPosition`, `InaviMapView#logoViewMargins`, `INVMapOptions#logoViewPosition`, `INVMapOptions#logoViewMargins`
+
 ## 0.7.0 - 2021-05-10
 ### Feature
 - `Map Studio` 서비스로 제작된 커스텀 지도 스타일을 지원하는 API 추가
