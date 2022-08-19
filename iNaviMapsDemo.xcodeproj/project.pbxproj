@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032C1A2F28ACD21D0016461E /* MapTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */; };
+		032C1A3128ACDBC10016461E /* MapOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */; };
+		0338BCD428A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */; };
 		7404557B2636B78E0066429F /* MapCustomStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */; };
 		74638BA325BDB1A30057CEEF /* MapSymbolScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */; };
 		74D5298B237C105E00B28E16 /* LocationIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D5298A237C105E00B28E16 /* LocationIconViewController.swift */; };
@@ -39,7 +42,6 @@
 		74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3823447BD6001E94B2 /* Main.storyboard */; };
 		74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3A23447BD6001E94B2 /* Camera.storyboard */; };
 		74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */; };
-		74FF9E4523447BD6001E94B2 /* MapOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */; };
 		74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3E23447BD6001E94B2 /* Misc.storyboard */; };
 		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
 		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeViewController.swift; sourceTree = "<group>"; };
+		0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesConversionViewController.swift; sourceTree = "<group>"; };
 		116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.release.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.release.xcconfig"; sourceTree = "<group>"; };
 		38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNaviMapsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemo.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0338BCCB28A4CCCC00C8DCE7 /* 지도 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
+			);
+			name = "지도";
+			path = "지도";
+			sourceTree = "<group>";
+		};
+		0338BCCC28A4CCE900C8DCE7 /* 기타 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */,
+				0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */,
+			);
+			name = "기타";
+			path = "기타";
+			sourceTree = "<group>";
+		};
+		0338BCCD28A4CD0100C8DCE7 /* 위치 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
+				74D5298A237C105E00B28E16 /* LocationIconViewController.swift */,
+			);
+			name = "위치";
+			path = "위치";
+			sourceTree = "<group>";
+		};
+		0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
+				74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */,
+			);
+			name = "클릭 이벤트";
+			path = "클릭 이벤트";
+			sourceTree = "<group>";
+		};
+		0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */ = {
+			isa = PBXGroup;
+			children = (
+				032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */,
+				7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */,
+				74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */,
+				74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */,
+				74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */,
+				D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */,
+				74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */,
+			);
+			name = "지도 옵션";
+			path = "지도 옵션";
+			sourceTree = "<group>";
+		};
+		0338BCD028A4CD6300C8DCE7 /* 카메라 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */,
+				74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */,
+				74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */,
+				74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */,
+			);
+			name = "카메라";
+			path = "카메라";
+			sourceTree = "<group>";
+		};
+		0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */ = {
+			isa = PBXGroup;
+			children = (
+				D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */,
+			);
+			name = "클러스터링";
+			path = "클러스터링";
+			sourceTree = "<group>";
+		};
+		0338BCD228A4CDC300C8DCE7 /* 셰이프 */ = {
+			isa = PBXGroup;
+			children = (
+				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
+				74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */,
+				74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */,
+				74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */,
+				74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */,
+				D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */,
+				74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */,
+				74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */,
+			);
+			name = "셰이프";
+			path = "셰이프";
+			sourceTree = "<group>";
+		};
 		74FF9DFF23447B9E001E94B2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,32 +240,15 @@
 		74FF9E0623447B9E001E94B2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */,
-				74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */,
-				74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */,
-				74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */,
-				74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */,
-				74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */,
-				74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */,
-				74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */,
-				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
-				74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */,
-				74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */,
-				D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */,
 				74FF9E1323447B9E001E94B2 /* MainViewController.swift */,
-				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
-				74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */,
-				74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */,
-				74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */,
-				D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */,
-				74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */,
-				7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */,
-				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
-				D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */,
-				74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */,
-				74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */,
-				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
-				74D5298A237C105E00B28E16 /* LocationIconViewController.swift */,
+				0338BCD228A4CDC300C8DCE7 /* 셰이프 */,
+				0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */,
+				0338BCD028A4CD6300C8DCE7 /* 카메라 */,
+				0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */,
+				0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */,
+				0338BCCD28A4CD0100C8DCE7 /* 위치 */,
+				0338BCCB28A4CCCC00C8DCE7 /* 지도 */,
+				0338BCCC28A4CCE900C8DCE7 /* 기타 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,7 +330,7 @@
 				8ADAD76522D42A9C00782103 /* Sources */,
 				8ADAD76622D42A9C00782103 /* Frameworks */,
 				8ADAD76722D42A9C00782103 /* Resources */,
-				BBBC01847F0FF1E179FDA8AD /* [CP] Embed Pods Frameworks */,
+				CA6BFFD41B0AA83DF6DE87A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,10 +384,10 @@
 				74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */,
 				74FF9E4023447BD6001E94B2 /* LaunchScreen.storyboard in Resources */,
 				8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */,
+				032C1A3128ACDBC10016461E /* MapOptions.storyboard in Resources */,
 				74FF9E1F23447B9E001E94B2 /* CustomInfoWindowView.xib in Resources */,
 				74E5BB1A23CFF68D00987B1F /* Location.storyboard in Resources */,
 				74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */,
-				74FF9E4523447BD6001E94B2 /* MapOptions.storyboard in Resources */,
 				74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */,
 				74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */,
 				D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */,
@@ -319,7 +397,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BBBC01847F0FF1E179FDA8AD /* [CP] Embed Pods Frameworks */ = {
+		CA6BFFD41B0AA83DF6DE87A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -373,6 +451,7 @@
 				74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */,
 				74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */,
 				74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */,
+				0338BCD428A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift in Sources */,
 				D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */,
 				74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */,
 				74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */,
@@ -392,6 +471,7 @@
 				74FF9E2123447B9E001E94B2 /* CameraFitBoundsViewController.swift in Sources */,
 				74FF9E2523447B9E001E94B2 /* INVCircleViewController.swift in Sources */,
 				74D5298B237C105E00B28E16 /* LocationIconViewController.swift in Sources */,
+				032C1A2F28ACD21D0016461E /* MapTypeViewController.swift in Sources */,
 				74FF9E1E23447B9E001E94B2 /* UIInsetLabel.swift in Sources */,
 				74FF9E2323447B9E001E94B2 /* GlobalZIndexViewController.swift in Sources */,
 			);
@@ -541,7 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 31;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -549,7 +629,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
@@ -563,7 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 31;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -571,7 +651,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.1;
+				MARKETING_VERSION = 0.8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;

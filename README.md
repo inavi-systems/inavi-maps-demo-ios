@@ -4,11 +4,15 @@ iOS 플랫폼에서 아이나비 지도를 사용하기 위한 프로젝트 기�
 ## 사전 준비
 - 아이나비 지도를 사용하기 위해서는 인증을 위한 **앱키**가 필요합니다.
 
-### 서비스 활성화
-- **[NHN Cloud Console](https://console.toast.com/)** 에서 서비스 선택 후 Application Service > Maps를 클릭합니다
-
-### 앱키 확인
-- **앱키**는 **NHN Cloud Console** 상단 **URL & Appkey** 메뉴에서 확인할 수 있습니다.
+### 서비스 활성화 및 앱키 발급
+- NHN Cloud 이용자
+  - **앱키** 발급을 위해서는 **[NHN Cloud](https://www.toast.com/kr)** 계정이 필요합니다. 계정이 없다면 먼저 계정을 생성해주세요.
+  - **[NHN Cloud Console](https://console.toast.com/)** 에서 서비스 선택 후 **Application Service > Maps**를 클릭합니다.
+  - 지도 서비스를 사용할 **조직**과 **프로젝트**를 선택 후 [확인] 버튼을 클릭합니다.
+  - 발급된 **앱키**는 **NHN Cloud Console** 상단 **URL & Appkey** 메뉴에서 확인할 수 있습니다.
+- LG U+ 지도 인프라 이용자
+  - 서비스명, 서비스 한 줄 소개, Bundle ID, 예상 사용량을 포함하여 [hongspan@inavi.kr](mailto:hongspan@inavi.kr)로 문의해 주세요.
+  - 발급된 **앱키**는 보내주신 이메일로 회신 드리겠습니다.
 
 
 ## Project 환경 구성
@@ -52,24 +56,43 @@ pod update inavi-maps-sdk
 ```
 
 
+## 인증 유형 설정
+> `LG U+ 지도 인프라 이용자만 해당됩니다.`
+
+`info.plist` 파일에 다음과 같이 `Key-Value`를 추가합니다.
+```xml
+<!-- info.plist -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    ...
+    <key>iNaviAuthType</key>
+    <string>LgUplusMapInfra</string>
+    ...
+  </dict>
+</plist>
+```
+
+
 ## 앱키 설정
 발급받은 앱키를 설정할 수 있도록 아래의 두 가지 방법을 제공합니다. 
 
 > `앱키가 설정되지 않으면 지도 초기화 단계에서 인증 오류가 발생합니다.`
 
 ### 1. 프로젝트 info.plist에서 설정
-`info.plist`파일 내부에 앱키를 설정할 수 있습니다.
+`info.plist` 파일에 다음과 같이 `Key-Value`를 추가하여 앱키를 설정할 수 있습니다.
 ```xml
 <!-- info.plist -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	...
-	<key>iNaviAppKey</key>
-	<string>YOUR_APP_KEY</string>
-	...
-</dict>
+  <dict>
+    ...
+    <key>iNaviAppKey</key>
+    <string>YOUR_APP_KEY</string>
+    ...
+  </dict>
 </plist>
 ```
 
@@ -88,7 +111,7 @@ INVMapSdk.sharedInstance().appKey = "YOUR_APP_KEY"
 
 
 ## License
-© 2019-2021. iNavi Systems Corp. All rights reserved.
+© 2019-2022. iNavi Systems Corp. All rights reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

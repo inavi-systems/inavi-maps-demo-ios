@@ -1,4 +1,11 @@
 # Change Log
+## 0.8.0 - 2022-08-19
+### Feature
+- 하이브리드/항공 지도 유형 설정 API 추가
+  - `INVMapType`, `InaviMapView#mapType`, `INVMapOptions#mapType`
+- 좌표 변환 API 추가
+  - `INVKatec`, `INVUtmk`, `INVTm`, `INVGrs80`
+
 
 ## 0.7.1 - 2022-03-30
 ### Feature

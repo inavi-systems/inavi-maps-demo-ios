@@ -12,6 +12,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         splitViewController.preferredDisplayMode = .allVisible
         splitViewController.delegate = self
         
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithDefaultBackground()
+            navigationBarAppearance.backgroundColor = UIColor(red: 0.92, green: 0.16, blue: 0.19, alpha: 1.0)
+            
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        }
+        
+        if #available(iOS 13.0, *) {
+            UINavigationBar.appearance().overrideUserInterfaceStyle = .dark
+        }
+        
         return true
     }
 
