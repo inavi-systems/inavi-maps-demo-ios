@@ -1,11 +1,3 @@
-//
-//  MapTypeViewController.swift
-//  iNaviMapsDemo
-//
-//  Created by 장은석 on 2022/08/17.
-//  Copyright © 2022 DAECHEOL KIM. All rights reserved.
-//
-
 import UIKit
 import iNaviMaps
 

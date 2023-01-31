@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,25 +11,25 @@
         <scene sceneID="YdR-Hw-huk">
             <objects>
                 <viewController title="Projection" id="frb-0o-81G" customClass="ProjectionViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0es-u6-xam">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="0es-u6-xam">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qol-3T-iml" customClass="InaviMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYd-xW-MWh" userLabel="InfoView">
-                                <rect key="frame" x="0.0" y="624" width="375" height="66"/>
+                                <rect key="frame" x="0.0" y="490" width="600" height="66"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지도상 좌표 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AI-hJ-Kr8">
-                                        <rect key="frame" x="8" y="37" width="359" height="21"/>
+                                        <rect key="frame" x="8" y="37" width="584" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화면상 좌표 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCZ-Vo-97G">
-                                        <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                        <rect key="frame" x="8" y="8" width="584" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -49,7 +47,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="DnH-Pn-SdV">
-                                <rect key="frame" x="162.66666666666666" y="287" width="50" height="50"/>
+                                <rect key="frame" x="275" y="220" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="g6b-4X-1I5"/>
                                     <constraint firstAttribute="width" constant="50" id="v3L-No-HvK"/>
@@ -88,7 +86,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Projection" id="l7L-2B-7b6" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1cu-Rn-4QX">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -103,19 +101,19 @@
         <scene sceneID="3sG-xd-Pu1">
             <objects>
                 <viewController title="CoordinatesConversion" id="SUb-Si-u64" customClass="CoordinatesConversionViewController" customModule="iNaviMapsDemo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uyg-QE-vLe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="uyg-QE-vLe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-tz-Xjm" customClass="InaviMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-9N-v1o" userLabel="InfoView">
-                                <rect key="frame" x="0.0" y="624" width="375" height="66"/>
+                                <rect key="frame" x="0.0" y="490" width="600" height="66"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fad-sx-dTT">
-                                        <rect key="frame" x="270" y="16" width="100" height="36"/>
+                                        <rect key="frame" x="495" y="16" width="100" height="36"/>
                                         <color key="backgroundColor" systemColor="systemFillColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="3fJ-9e-49o"/>
@@ -153,7 +151,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crosshair" translatesAutoresizingMaskIntoConstraints="NO" id="Su2-uT-WxK">
-                                <rect key="frame" x="162.66666666666666" y="287" width="50" height="50"/>
+                                <rect key="frame" x="275" y="220" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ff1-Je-QPe"/>
                                     <constraint firstAttribute="width" constant="50" id="roY-2u-EoK"/>
@@ -192,7 +190,7 @@
                 <navigationController storyboardIdentifier="CoordinatesConversion" automaticallyAdjustsScrollViewInsets="NO" id="3nw-pr-yNs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mx1-Il-GRp">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -204,11 +202,59 @@
             </objects>
             <point key="canvasLocation" x="-724" y="712"/>
         </scene>
+        <!--PickPois-->
+        <scene sceneID="ZnY-ED-TjK">
+            <objects>
+                <viewController title="Pick POIs" id="RgL-bF-zYq" customClass="PickPoisViewController" customModule="iNaviMapsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="Uta-D1-6jY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DG4-yr-cag" customClass="InaviMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BeY-RW-tZw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DG4-yr-cag" firstAttribute="bottom" secondItem="Uta-D1-6jY" secondAttribute="bottom" id="GCT-HJ-2iv"/>
+                            <constraint firstItem="DG4-yr-cag" firstAttribute="trailing" secondItem="Uta-D1-6jY" secondAttribute="trailing" id="S72-xL-0bv"/>
+                            <constraint firstItem="DG4-yr-cag" firstAttribute="top" secondItem="BeY-RW-tZw" secondAttribute="top" id="Yfi-jL-zuS"/>
+                            <constraint firstItem="DG4-yr-cag" firstAttribute="leading" secondItem="Uta-D1-6jY" secondAttribute="leading" id="lir-48-wFp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick POIs" id="z63-Vg-z2d"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="DG4-yr-cag" id="7Cu-FX-qEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTo-kW-g0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JiS-SK-rOp">
+            <objects>
+                <navigationController storyboardIdentifier="PickPois" id="fuu-u9-JU9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wyv-bA-Bzq">
+                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RgL-bF-zYq" kind="relationship" relationship="rootViewController" id="uE3-Kh-ovZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rf3-e5-QtP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="18"/>
+        </scene>
     </scenes>
     <resources>
         <image name="crosshair" width="52" height="52"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
