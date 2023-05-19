@@ -1,6 +1,8 @@
 # Change Log
-## 0.8.1 - 2023-01-31
+## 0.9.0 - 2023-05-19
 
+
+## 0.8.1 - 2023-01-31
 ### Features
 - 특정 화면 영역에 표출되는 POI의 정보를 반환하는 API 추가
     - `INVPoi`, `InaviMapView#pickPois`

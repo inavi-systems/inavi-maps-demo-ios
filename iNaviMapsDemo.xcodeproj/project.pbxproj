@@ -120,7 +120,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0338BCCB28A4CCCC00C8DCE7 /* 지도 */ = {
+		0338BCCB28A4CCCC00C8DCE7 /* 지도 */ = {
 			isa = PBXGroup;
 			children = (
 				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
@@ -129,7 +129,7 @@
 			path = "지도";
 			sourceTree = "<group>";
 		};
-		0338BCCC28A4CCE900C8DCE7 /* 기타 */ = {
+		0338BCCC28A4CCE900C8DCE7 /* 기타 */ = {
 			isa = PBXGroup;
 			children = (
 				7410BCF6297928AC001C976C /* PickPoisViewController.swift */,
@@ -140,7 +140,7 @@
 			path = "기타";
 			sourceTree = "<group>";
 		};
-		0338BCCD28A4CD0100C8DCE7 /* 위치 */ = {
+		0338BCCD28A4CD0100C8DCE7 /* 위치 */ = {
 			isa = PBXGroup;
 			children = (
 				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
@@ -150,7 +150,7 @@
 			path = "위치";
 			sourceTree = "<group>";
 		};
-		0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */ = {
+		0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */ = {
 			isa = PBXGroup;
 			children = (
 				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
@@ -160,7 +160,7 @@
 			path = "클릭 이벤트";
 			sourceTree = "<group>";
 		};
-		0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */ = {
+		0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */ = {
 			isa = PBXGroup;
 			children = (
 				032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */,
@@ -175,7 +175,7 @@
 			path = "지도 옵션";
 			sourceTree = "<group>";
 		};
-		0338BCD028A4CD6300C8DCE7 /* 카메라 */ = {
+		0338BCD028A4CD6300C8DCE7 /* 카메라 */ = {
 			isa = PBXGroup;
 			children = (
 				74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */,
@@ -187,7 +187,7 @@
 			path = "카메라";
 			sourceTree = "<group>";
 		};
-		0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */ = {
+		0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */ = {
 			isa = PBXGroup;
 			children = (
 				D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */,
@@ -196,7 +196,7 @@
 			path = "클러스터링";
 			sourceTree = "<group>";
 		};
-		0338BCD228A4CDC300C8DCE7 /* 셰이프 */ = {
+		0338BCD228A4CDC300C8DCE7 /* 셰이프 */ = {
 			isa = PBXGroup;
 			children = (
 				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
@@ -244,14 +244,14 @@
 			isa = PBXGroup;
 			children = (
 				74FF9E1323447B9E001E94B2 /* MainViewController.swift */,
-				0338BCD228A4CDC300C8DCE7 /* 셰이프 */,
-				0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */,
-				0338BCD028A4CD6300C8DCE7 /* 카메라 */,
-				0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */,
-				0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */,
-				0338BCCD28A4CD0100C8DCE7 /* 위치 */,
-				0338BCCB28A4CCCC00C8DCE7 /* 지도 */,
-				0338BCCC28A4CCE900C8DCE7 /* 기타 */,
+				0338BCD228A4CDC300C8DCE7 /* 셰이프 */,
+				0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */,
+				0338BCD028A4CD6300C8DCE7 /* 카메라 */,
+				0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */,
+				0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */,
+				0338BCCD28A4CD0100C8DCE7 /* 위치 */,
+				0338BCCB28A4CCCC00C8DCE7 /* 지도 */,
+				0338BCCC28A4CCE900C8DCE7 /* 기타 */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				8ADAD76522D42A9C00782103 /* Sources */,
 				8ADAD76622D42A9C00782103 /* Frameworks */,
 				8ADAD76722D42A9C00782103 /* Resources */,
-				CA6BFFD41B0AA83DF6DE87A4 /* [CP] Embed Pods Frameworks */,
+				C1384793EBD5234FD776ABA1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,7 +400,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CA6BFFD41B0AA83DF6DE87A4 /* [CP] Embed Pods Frameworks */ = {
+		C1384793EBD5234FD776ABA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -625,7 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -633,7 +633,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
@@ -647,7 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 34;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -655,7 +655,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.8.1;
+				MARKETING_VERSION = 0.9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
