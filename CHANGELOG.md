@@ -1,4 +1,7 @@
 # Change Log
+## 0.10.0 - 2023-10-18
+- Minimum Deployments iOS 11.0 변경
+- XCFramework 적용
 
 ## 0.9.3 - 2023-07-21
 - `INVShape` 겹침 상태에서 터치 이벤트 오류 수정
