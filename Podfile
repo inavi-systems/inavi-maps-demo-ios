@@ -6,6 +6,5 @@ target 'iNaviMapsDemo' do
   use_frameworks!
 
   # Pods for iNaviMapsDemo
-  pod 'inavi-maps-sdk', '0.10.0'
-
+  pod 'inavi-maps-sdk', '0.10.1'
 end

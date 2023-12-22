@@ -1,4 +1,8 @@
 # Change Log
+
+## 0.10.1 - 2023-12-22
+- 오픈 소스 라이선스, 법적 고지 UI 오류 수정
+
 ## 0.10.0 - 2023-10-18
 - Minimum Deployments iOS 11.0 변경
 - XCFramework 적용
