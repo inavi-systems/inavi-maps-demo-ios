@@ -1,5 +1,10 @@
 # Change Log
 
+
+## 0.10.2 - 2024-05-28
+### Bug Fixes
+- `INVRoute` 투명도 포함된 색상 지정 시 비정상 표출 오류 수정
+
 ## 0.10.1 - 2023-12-22
 - 오픈 소스 라이선스, 법적 고지 UI 오류 수정
 
@@ -47,11 +52,13 @@
 ## 0.6.1 - 2021-02-22
 ### Improvements
 - SDK 안정성 향상
+
 ## 0.6.0 - 2021-01-28
 ### Features
 - 지도 심벌의 크기를 설정하는 API 추가
   - `InaviMapView#symbolScale`, `INVMapOptions#symbolScale`
 - 지도의 기울기 각도 설정 시 건물 3D 효과 지원
+
 ## 0.5.3 - 2020-11-02
 
 ### Bug Fixes
