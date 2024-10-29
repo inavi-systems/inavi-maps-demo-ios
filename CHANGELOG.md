@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.11.0 - 2024-10-29
+- 지형 지도 타입 추가
+    - `INVMapTypeNormalWithHillshade`, `INVMapTypeHybridWithHillshade`, `INVMapTypeSatelliteWithHillshade`, 
 
 ## 0.10.2 - 2024-05-28
 ### Bug Fixes

@@ -17,7 +17,10 @@ class MapTypeViewController: MapViewController {
         styleItems.append((title: "일반 지도", mapType: .normal))
         styleItems.append((title: "항공 지도", mapType: .satellite))
         styleItems.append((title: "하이브리드 지도", mapType: .hybrid))
-        
+        styleItems.append((title: "일반 지형 지도", mapType: .normalWithHillshade))
+        styleItems.append((title: "항공 지형 지도", mapType: .satelliteWithHillshade))
+        styleItems.append((title: "하이브리드 지형 지도", mapType: .hybridWithHillshade))
+
         styleItems.forEach { item in
             alertController.addAction(UIAlertAction(title: item.title, style: .default, handler: { alert in
                 self.selectButton?.setTitle(item.title as String, for: .normal)
