@@ -52,7 +52,5 @@
 	</array>
 	<key>iNaviAppKey</key>
 	<string>YOUR_APP_KEY</string>
-	<key>iNaviAuthType</key>
-	<string></string>
 </dict>
 </plist>

@@ -1,5 +1,8 @@
 # Change Log
 
+## 0.20.0 - 2025-03-12
+- 인증 유형을 IMAPS로 변경
+
 ## 0.11.0 - 2024-10-29
 - 지형 지도 타입 추가
     - `INVMapTypeNormalWithHillshade`, `INVMapTypeHybridWithHillshade`, `INVMapTypeSatelliteWithHillshade`, 

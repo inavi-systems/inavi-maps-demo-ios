@@ -1,15 +1,21 @@
 # iNaviMaps SDK for iOS Demo
-iOS 플랫폼에서 아이나비 지도를 사용하기 위한 프로젝트 기본 설정 방법을 설명합니다.
+iOS 플랫폼에서 0.20.0 미만 버전의 아이나비 지도를 사용하기 위한 프로젝트 기본 설정 방법을 설명합니다.
 - `0.20.0 미만 버전은 일정 시간이 지난 후 지원이 종료될 수 있습니다. 0.20.0 이상 버전으로 업그레이드를 권장합니다.`
-- 0.20.0 미만 버전의 설명은 [이전 README.md](./README_DEPRECATED.md)를 참조하시기 바랍니다.
+- 0.20.0 이상 버전의 설명은 [README.md](./README.md)를 참조하시기 바랍니다.
 
 ## 사전 준비
-- 아이나비 지도를 사용하기 위해서는 인증을 위한 **APP KEY**가 필요합니다.
+- 아이나비 지도를 사용하기 위해서는 인증을 위한 **앱키**가 필요합니다.
 
-### 서비스 활성화 및 APP KEY 발급
-- **APP KEY** 발급을 위해서는 **[iMPS](https://mapsapi.inavisys.com/)** 계정이 필요합니다. 계정이 없다면 먼저 계정을 생성해주세요.
-- **[iMPS Console](https://mapsapi.inavisys.com/dash-board/)** 에서 APP을 생성합니다.
-- 생성된 APP에서 상품을 신청을 신청하시면, **APP KEY**를 확인할 수 있습니다.
+### 서비스 활성화 및 앱키 발급
+- NHN Cloud 이용자
+  - **앱키** 발급을 위해서는 **[NHN Cloud](https://www.toast.com/kr)** 계정이 필요합니다. 계정이 없다면 먼저 계정을 생성해주세요.
+  - **[NHN Cloud Console](https://console.toast.com/)** 에서 서비스 선택 후 **Application Service > Maps**를 클릭합니다.
+  - 지도 서비스를 사용할 **조직**과 **프로젝트**를 선택 후 [확인] 버튼을 클릭합니다.
+  - 발급된 **앱키**는 **NHN Cloud Console** 상단 **URL & Appkey** 메뉴에서 확인할 수 있습니다.
+- LG U+ 지도 인프라 이용자
+  - 서비스명, 서비스 한 줄 소개, Bundle ID, 예상 사용량을 포함하여 [hongspan@inavi.kr](mailto:hongspan@inavi.kr)로 문의해 주세요.
+  - 발급된 **앱키**는 보내주신 이메일로 회신 드리겠습니다.
+
 
 ## Project 환경 구성
 아이나비 지도 SDK를 사용하기 위해서는 다음과 같은 순서로 프로젝트의 환경을 구성해주어야 합니다.
@@ -55,8 +61,28 @@ pod cache clean inavi-maps-sdk
 pod update inavi-maps-sdk
 ```
 
-## APP KEY 설정
-발급받은 APP KEY를 설정할 수 있도록 아래의 두 가지 방법을 제공합니다.
+
+## 인증 유형 설정
+> `LG U+ 지도 인프라 이용자만 해당됩니다.`
+
+`info.plist` 파일에 다음과 같이 `Key-Value`를 추가합니다.
+```xml
+<!-- info.plist -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    ...
+    <key>iNaviAuthType</key>
+    <string>LgUplusMapInfra</string>
+    ...
+  </dict>
+</plist>
+```
+
+
+## 앱키 설정
+발급받은 앱키를 설정할 수 있도록 아래의 두 가지 방법을 제공합니다. 
 
 > `앱키가 설정되지 않으면 지도 초기화 단계에서 인증 오류가 발생합니다.`
 
@@ -85,7 +111,7 @@ INVMapSdk.sharedInstance().appKey = "YOUR_APP_KEY"
 ```
 
 ## 주요 iNavi Maps SDK 안내
-추가적인 iNavi Maps SDK 사용법은 [iMPS](https://mapsapi.inavisys.com/)를 참고하시기 바랍니다.
+추가적인 iNavi Maps SDK 사용법은 [iNavi Maps API 센터](http://imapsapi.inavi.com/)를 참고하시기 바랍니다.
 - [사업 제휴 문의](mailto:hongspan@inavi.kr)
 - [기술 문의](mailto:abskl@inavi.kr)
 
