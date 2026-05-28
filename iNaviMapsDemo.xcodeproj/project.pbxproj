@@ -7,107 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032C1A2F28ACD21D0016461E /* MapTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */; };
-		032C1A3128ACDBC10016461E /* MapOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */; };
-		0338BCD428A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */; };
-		7404557B2636B78E0066429F /* MapCustomStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */; };
-		7410BCF7297928AC001C976C /* PickPoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7410BCF6297928AC001C976C /* PickPoisViewController.swift */; };
-		741AD8D82E9D342D00802B45 /* IndoorMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741AD8D72E9D342D00802B45 /* IndoorMapController.swift */; };
-		74638BA325BDB1A30057CEEF /* MapSymbolScaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */; };
-		74D5298B237C105E00B28E16 /* LocationIconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D5298A237C105E00B28E16 /* LocationIconViewController.swift */; };
-		74E5BB1A23CFF68D00987B1F /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3C23447BD6001E94B2 /* Location.storyboard */; };
-		74FF9E1C23447B9E001E94B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0023447B9E001E94B2 /* AppDelegate.swift */; };
-		74FF9E1D23447B9E001E94B2 /* UIActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0223447B9E001E94B2 /* UIActionButton.swift */; };
-		74FF9E1E23447B9E001E94B2 /* UIInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */; };
-		74FF9E1F23447B9E001E94B2 /* CustomInfoWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */; };
-		74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */; };
-		74FF9E2123447B9E001E94B2 /* CameraFitBoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */; };
-		74FF9E2223447B9E001E94B2 /* CameraMoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */; };
-		74FF9E2323447B9E001E94B2 /* GlobalZIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */; };
-		74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */; };
-		74FF9E2523447B9E001E94B2 /* INVCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */; };
-		74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */; };
-		74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */; };
-		74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */; };
-		74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */; };
-		74FF9E2B23447B9E001E94B2 /* INVPolylineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */; };
-		74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1323447B9E001E94B2 /* MainViewController.swift */; };
-		74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */; };
-		74FF9E2E23447B9E001E94B2 /* MapControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */; };
-		74FF9E2F23447B9E001E94B2 /* MapGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */; };
-		74FF9E3023447B9E001E94B2 /* MapPaddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */; };
-		74FF9E3123447B9E001E94B2 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1823447B9E001E94B2 /* MapViewController.swift */; };
-		74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */; };
-		74FF9E3323447B9E001E94B2 /* ShapeClickEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */; };
-		74FF9E3423447B9E001E94B2 /* UserTrackingModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */; };
-		74FF9E4023447BD6001E94B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */; };
-		74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3823447BD6001E94B2 /* Main.storyboard */; };
-		74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3A23447BD6001E94B2 /* Camera.storyboard */; };
-		74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */; };
-		74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3E23447BD6001E94B2 /* Misc.storyboard */; };
-		74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74FF9E3F23447BD6001E94B2 /* Shape.storyboard */; };
+		74A258462FC79EA00066FFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A258442FC79EA00066FFFB /* LaunchScreen.storyboard */; };
+		74A258472FC79EA00066FFFB /* CustomInfoWindowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A2583C2FC79EA00066FFFB /* CustomInfoWindowView.xib */; };
+		74A258482FC79EA00066FFFB /* MapDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258222FC79EA00066FFFB /* MapDemoView.swift */; };
+		74A258492FC79EA00066FFFB /* INVMarkerOverlapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258352FC79EA00066FFFB /* INVMarkerOverlapView.swift */; };
+		74A2584A2FC79EA00066FFFB /* MapGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258262FC79EA00066FFFB /* MapGestureView.swift */; };
+		74A2584B2FC79EA00066FFFB /* MapControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258242FC79EA00066FFFB /* MapControllerView.swift */; };
+		74A2584C2FC79EA00066FFFB /* ShapeClickEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2581A2FC79EA00066FFFB /* ShapeClickEventView.swift */; };
+		74A2584D2FC79EA00066FFFB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258212FC79EA00066FFFB /* MainView.swift */; };
+		74A2584E2FC79EA00066FFFB /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2580F2FC79EA00066FFFB /* MenuModel.swift */; };
+		74A2584F2FC79EA00066FFFB /* INVInfoWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258342FC79EA00066FFFB /* INVInfoWindowView.swift */; };
+		74A258502FC79EA00066FFFB /* INVLatLng+Formatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2583F2FC79EA00066FFFB /* INVLatLng+Formatted.swift */; };
+		74A258512FC79EA00066FFFB /* iNaviMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2580D2FC79EA00066FFFB /* iNaviMapsApp.swift */; };
+		74A258522FC79EA00066FFFB /* MarkerClusteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2581C2FC79EA00066FFFB /* MarkerClusteringView.swift */; };
+		74A258532FC79EA00066FFFB /* MapCustomStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258252FC79EA00066FFFB /* MapCustomStyleView.swift */; };
+		74A258542FC79EA00066FFFB /* CustomInfoWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2583B2FC79EA00066FFFB /* CustomInfoWindowView.swift */; };
+		74A258552FC79EA00066FFFB /* INVRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258392FC79EA00066FFFB /* INVRouteView.swift */; };
+		74A258562FC79EA00066FFFB /* INVCameraUpdateParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258172FC79EA00066FFFB /* INVCameraUpdateParamsView.swift */; };
+		74A258572FC79EA00066FFFB /* IndoorMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2582E2FC79EA00066FFFB /* IndoorMapView.swift */; };
+		74A258582FC79EA00066FFFB /* INVMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258362FC79EA00066FFFB /* INVMarkerView.swift */; };
+		74A258592FC79EA00066FFFB /* INVPolylineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258382FC79EA00066FFFB /* INVPolylineView.swift */; };
+		74A2585A2FC79EA00066FFFB /* INVPolygonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258372FC79EA00066FFFB /* INVPolygonView.swift */; };
+		74A2585B2FC79EA00066FFFB /* INVCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258332FC79EA00066FFFB /* INVCircleView.swift */; };
+		74A2585C2FC79EA00066FFFB /* CoordinatesConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2582D2FC79EA00066FFFB /* CoordinatesConversionView.swift */; };
+		74A2585D2FC79EA00066FFFB /* CameraEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258142FC79EA00066FFFB /* CameraEventView.swift */; };
+		74A2585E2FC79EA00066FFFB /* PickPoisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2582F2FC79EA00066FFFB /* PickPoisView.swift */; };
+		74A2585F2FC79EA00066FFFB /* LocationIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2581E2FC79EA00066FFFB /* LocationIconView.swift */; };
+		74A258602FC79EA00066FFFB /* MapSymbolScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2582A2FC79EA00066FFFB /* MapSymbolScaleView.swift */; };
+		74A258612FC79EA00066FFFB /* UserTrackingModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2581F2FC79EA00066FFFB /* UserTrackingModeView.swift */; };
+		74A258622FC79EA00066FFFB /* InaviMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2583E2FC79EA00066FFFB /* InaviMapViewRepresentable.swift */; };
+		74A258632FC79EA00066FFFB /* UIActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258112FC79EA00066FFFB /* UIActionButton.swift */; };
+		74A258642FC79EA00066FFFB /* CameraFitBoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258152FC79EA00066FFFB /* CameraFitBoundsView.swift */; };
+		74A258652FC79EA00066FFFB /* CameraMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258162FC79EA00066FFFB /* CameraMoveView.swift */; };
+		74A258662FC79EA00066FFFB /* UIInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258122FC79EA00066FFFB /* UIInsetLabel.swift */; };
+		74A258672FC79EA00066FFFB /* MapPaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258282FC79EA00066FFFB /* MapPaddingView.swift */; };
+		74A258682FC79EA00066FFFB /* MapRestrictionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258292FC79EA00066FFFB /* MapRestrictionView.swift */; };
+		74A258692FC79EA00066FFFB /* GlobalZIndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258322FC79EA00066FFFB /* GlobalZIndexView.swift */; };
+		74A2586A2FC79EA00066FFFB /* ProjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258302FC79EA00066FFFB /* ProjectionView.swift */; };
+		74A2586B2FC79EA00066FFFB /* MapTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2582B2FC79EA00066FFFB /* MapTypeView.swift */; };
+		74A2586C2FC79EA00066FFFB /* MapClickEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258192FC79EA00066FFFB /* MapClickEventView.swift */; };
+		74A2586D2FC79EA00066FFFB /* MapLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A258272FC79EA00066FFFB /* MapLanguageView.swift */; };
+		74A2586E2FC79EA00066FFFB /* DemoOverlayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2583D2FC79EA00066FFFB /* DemoOverlayPanel.swift */; };
+		74A258712FC7AA3E0066FFFB /* iNaviMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 74A258702FC7AA3E0066FFFB /* iNaviMaps */; };
 		8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ADAD77322D42A9D00782103 /* Assets.xcassets */; };
-		C7AB1019CE46A3D3CDBF95D4 /* Pods_iNaviMapsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */; };
-		D66FEAF8241608CC005622FE /* MapRestrictionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */; };
-		D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */; };
-		D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */; };
-		D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeViewController.swift; sourceTree = "<group>"; };
-		0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesConversionViewController.swift; sourceTree = "<group>"; };
-		116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.release.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.release.xcconfig"; sourceTree = "<group>"; };
-		38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iNaviMapsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemo.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		420718C55FFCC104EF22E64F /* Pods-inaviMapsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inaviMapsApp.debug.xcconfig"; path = "Target Support Files/Pods-inaviMapsApp/Pods-inaviMapsApp.debug.xcconfig"; sourceTree = "<group>"; };
-		5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.debug.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemo.debug.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCustomStyleViewController.swift; sourceTree = "<group>"; };
-		7410BCF6297928AC001C976C /* PickPoisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPoisViewController.swift; sourceTree = "<group>"; };
-		741AD8D72E9D342D00802B45 /* IndoorMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorMapController.swift; sourceTree = "<group>"; };
-		74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSymbolScaleViewController.swift; sourceTree = "<group>"; };
-		74D5298A237C105E00B28E16 /* LocationIconViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationIconViewController.swift; sourceTree = "<group>"; };
-		74FF9E0023447B9E001E94B2 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74FF9E0223447B9E001E94B2 /* UIActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIActionButton.swift; sourceTree = "<group>"; };
-		74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInsetLabel.swift; sourceTree = "<group>"; };
-		74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoWindowView.xib; sourceTree = "<group>"; };
-		74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraEventViewController.swift; sourceTree = "<group>"; };
-		74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraFitBoundsViewController.swift; sourceTree = "<group>"; };
-		74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMoveViewController.swift; sourceTree = "<group>"; };
-		74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalZIndexViewController.swift; sourceTree = "<group>"; };
-		74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVCameraUpdateParamsViewController.swift; sourceTree = "<group>"; };
-		74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVCircleViewController.swift; sourceTree = "<group>"; };
-		74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVInfoWindowViewController.swift; sourceTree = "<group>"; };
-		74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerOverlapViewController.swift; sourceTree = "<group>"; };
-		74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVMarkerViewController.swift; sourceTree = "<group>"; };
-		74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolygonViewController.swift; sourceTree = "<group>"; };
-		74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVPolylineViewController.swift; sourceTree = "<group>"; };
-		74FF9E1323447B9E001E94B2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapClickEventViewController.swift; sourceTree = "<group>"; };
-		74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapControllerViewController.swift; sourceTree = "<group>"; };
-		74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapGestureViewController.swift; sourceTree = "<group>"; };
-		74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPaddingViewController.swift; sourceTree = "<group>"; };
-		74FF9E1823447B9E001E94B2 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectionViewController.swift; sourceTree = "<group>"; };
-		74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeClickEventViewController.swift; sourceTree = "<group>"; };
-		74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTrackingModeViewController.swift; sourceTree = "<group>"; };
-		74FF9E3723447BD6001E94B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74FF9E3923447BD6001E94B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		74FF9E3A23447BD6001E94B2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClickEvent.storyboard; sourceTree = "<group>"; };
-		74FF9E3C23447BD6001E94B2 /* Location.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
-		74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MapOptions.storyboard; sourceTree = "<group>"; };
-		74FF9E3E23447BD6001E94B2 /* Misc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Misc.storyboard; sourceTree = "<group>"; };
-		74FF9E3F23447BD6001E94B2 /* Shape.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shape.storyboard; sourceTree = "<group>"; };
-		7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNaviMapsDemoiOS.release.xcconfig"; path = "Target Support Files/Pods-iNaviMapsDemoiOS/Pods-iNaviMapsDemoiOS.release.xcconfig"; sourceTree = "<group>"; };
+		74A2580D2FC79EA00066FFFB /* iNaviMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNaviMapsApp.swift; sourceTree = "<group>"; };
+		74A2580F2FC79EA00066FFFB /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		74A258112FC79EA00066FFFB /* UIActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActionButton.swift; sourceTree = "<group>"; };
+		74A258122FC79EA00066FFFB /* UIInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInsetLabel.swift; sourceTree = "<group>"; };
+		74A258142FC79EA00066FFFB /* CameraEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraEventView.swift; sourceTree = "<group>"; };
+		74A258152FC79EA00066FFFB /* CameraFitBoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFitBoundsView.swift; sourceTree = "<group>"; };
+		74A258162FC79EA00066FFFB /* CameraMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMoveView.swift; sourceTree = "<group>"; };
+		74A258172FC79EA00066FFFB /* INVCameraUpdateParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVCameraUpdateParamsView.swift; sourceTree = "<group>"; };
+		74A258192FC79EA00066FFFB /* MapClickEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapClickEventView.swift; sourceTree = "<group>"; };
+		74A2581A2FC79EA00066FFFB /* ShapeClickEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeClickEventView.swift; sourceTree = "<group>"; };
+		74A2581C2FC79EA00066FFFB /* MarkerClusteringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerClusteringView.swift; sourceTree = "<group>"; };
+		74A2581E2FC79EA00066FFFB /* LocationIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationIconView.swift; sourceTree = "<group>"; };
+		74A2581F2FC79EA00066FFFB /* UserTrackingModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTrackingModeView.swift; sourceTree = "<group>"; };
+		74A258212FC79EA00066FFFB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74A258222FC79EA00066FFFB /* MapDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDemoView.swift; sourceTree = "<group>"; };
+		74A258242FC79EA00066FFFB /* MapControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapControllerView.swift; sourceTree = "<group>"; };
+		74A258252FC79EA00066FFFB /* MapCustomStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCustomStyleView.swift; sourceTree = "<group>"; };
+		74A258262FC79EA00066FFFB /* MapGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGestureView.swift; sourceTree = "<group>"; };
+		74A258272FC79EA00066FFFB /* MapLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLanguageView.swift; sourceTree = "<group>"; };
+		74A258282FC79EA00066FFFB /* MapPaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPaddingView.swift; sourceTree = "<group>"; };
+		74A258292FC79EA00066FFFB /* MapRestrictionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRestrictionView.swift; sourceTree = "<group>"; };
+		74A2582A2FC79EA00066FFFB /* MapSymbolScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSymbolScaleView.swift; sourceTree = "<group>"; };
+		74A2582B2FC79EA00066FFFB /* MapTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTypeView.swift; sourceTree = "<group>"; };
+		74A2582D2FC79EA00066FFFB /* CoordinatesConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesConversionView.swift; sourceTree = "<group>"; };
+		74A2582E2FC79EA00066FFFB /* IndoorMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndoorMapView.swift; sourceTree = "<group>"; };
+		74A2582F2FC79EA00066FFFB /* PickPoisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickPoisView.swift; sourceTree = "<group>"; };
+		74A258302FC79EA00066FFFB /* ProjectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectionView.swift; sourceTree = "<group>"; };
+		74A258322FC79EA00066FFFB /* GlobalZIndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalZIndexView.swift; sourceTree = "<group>"; };
+		74A258332FC79EA00066FFFB /* INVCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVCircleView.swift; sourceTree = "<group>"; };
+		74A258342FC79EA00066FFFB /* INVInfoWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVInfoWindowView.swift; sourceTree = "<group>"; };
+		74A258352FC79EA00066FFFB /* INVMarkerOverlapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVMarkerOverlapView.swift; sourceTree = "<group>"; };
+		74A258362FC79EA00066FFFB /* INVMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVMarkerView.swift; sourceTree = "<group>"; };
+		74A258372FC79EA00066FFFB /* INVPolygonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVPolygonView.swift; sourceTree = "<group>"; };
+		74A258382FC79EA00066FFFB /* INVPolylineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVPolylineView.swift; sourceTree = "<group>"; };
+		74A258392FC79EA00066FFFB /* INVRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INVRouteView.swift; sourceTree = "<group>"; };
+		74A2583B2FC79EA00066FFFB /* CustomInfoWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoWindowView.swift; sourceTree = "<group>"; };
+		74A2583C2FC79EA00066FFFB /* CustomInfoWindowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomInfoWindowView.xib; sourceTree = "<group>"; };
+		74A2583D2FC79EA00066FFFB /* DemoOverlayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoOverlayPanel.swift; sourceTree = "<group>"; };
+		74A2583E2FC79EA00066FFFB /* InaviMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InaviMapViewRepresentable.swift; sourceTree = "<group>"; };
+		74A2583F2FC79EA00066FFFB /* INVLatLng+Formatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "INVLatLng+Formatted.swift"; sourceTree = "<group>"; };
+		74A258432FC79EA00066FFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ADAD76922D42A9C00782103 /* iNaviMapsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNaviMapsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADAD77322D42A9D00782103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ADAD77822D42A9D00782103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRestrictionViewController.swift; sourceTree = "<group>"; };
-		D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INVRouteViewController.swift; sourceTree = "<group>"; };
-		D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clustering.storyboard; sourceTree = "<group>"; };
-		D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerClusteringViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,162 +104,168 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7AB1019CE46A3D3CDBF95D4 /* Pods_iNaviMapsDemo.framework in Frameworks */,
+				74A258712FC7AA3E0066FFFB /* iNaviMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0338BCCB28A4CCCC00C8DCE7 /* 지도 */ = {
+		74A2580E2FC79EA00066FFFB /* App */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E1823447B9E001E94B2 /* MapViewController.swift */,
+				74A2580D2FC79EA00066FFFB /* iNaviMapsApp.swift */,
 			);
-			name = "지도";
-			path = "지도";
+			path = App;
 			sourceTree = "<group>";
 		};
-		0338BCCC28A4CCE900C8DCE7 /* 기타 */ = {
+		74A258102FC79EA00066FFFB /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				741AD8D72E9D342D00802B45 /* IndoorMapController.swift */,
-				7410BCF6297928AC001C976C /* PickPoisViewController.swift */,
-				74FF9E1923447B9E001E94B2 /* ProjectionViewController.swift */,
-				0338BCD328A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift */,
+				74A2580F2FC79EA00066FFFB /* MenuModel.swift */,
 			);
-			name = "기타";
-			path = "기타";
+			path = Menu;
 			sourceTree = "<group>";
 		};
-		0338BCCD28A4CD0100C8DCE7 /* 위치 */ = {
+		74A258132FC79EA00066FFFB /* UI Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E1B23447B9E001E94B2 /* UserTrackingModeViewController.swift */,
-				74D5298A237C105E00B28E16 /* LocationIconViewController.swift */,
-			);
-			name = "위치";
-			path = "위치";
-			sourceTree = "<group>";
-		};
-		0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */ = {
-			isa = PBXGroup;
-			children = (
-				74FF9E1423447B9E001E94B2 /* MapClickEventViewController.swift */,
-				74FF9E1A23447B9E001E94B2 /* ShapeClickEventViewController.swift */,
-			);
-			name = "클릭 이벤트";
-			path = "클릭 이벤트";
-			sourceTree = "<group>";
-		};
-		0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */ = {
-			isa = PBXGroup;
-			children = (
-				032C1A2E28ACD21D0016461E /* MapTypeViewController.swift */,
-				7404557A2636B78E0066429F /* MapCustomStyleViewController.swift */,
-				74FF9E1723447B9E001E94B2 /* MapPaddingViewController.swift */,
-				74FF9E1623447B9E001E94B2 /* MapGestureViewController.swift */,
-				74FF9E1523447B9E001E94B2 /* MapControllerViewController.swift */,
-				D66FEAF7241608CC005622FE /* MapRestrictionViewController.swift */,
-				74638BA225BDB1A20057CEEF /* MapSymbolScaleViewController.swift */,
-			);
-			name = "지도 옵션";
-			path = "지도 옵션";
-			sourceTree = "<group>";
-		};
-		0338BCD028A4CD6300C8DCE7 /* 카메라 */ = {
-			isa = PBXGroup;
-			children = (
-				74FF9E0923447B9E001E94B2 /* CameraMoveViewController.swift */,
-				74FF9E0B23447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift */,
-				74FF9E0823447B9E001E94B2 /* CameraFitBoundsViewController.swift */,
-				74FF9E0723447B9E001E94B2 /* CameraEventViewController.swift */,
-			);
-			name = "카메라";
-			path = "카메라";
-			sourceTree = "<group>";
-		};
-		0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */ = {
-			isa = PBXGroup;
-			children = (
-				D6F871A023FA50BD00D87A09 /* MarkerClusteringViewController.swift */,
-			);
-			name = "클러스터링";
-			path = "클러스터링";
-			sourceTree = "<group>";
-		};
-		0338BCD228A4CDC300C8DCE7 /* 셰이프 */ = {
-			isa = PBXGroup;
-			children = (
-				74FF9E0F23447B9E001E94B2 /* INVMarkerViewController.swift */,
-				74FF9E0E23447B9E001E94B2 /* INVMarkerOverlapViewController.swift */,
-				74FF9E0D23447B9E001E94B2 /* INVInfoWindowViewController.swift */,
-				74FF9E1123447B9E001E94B2 /* INVPolygonViewController.swift */,
-				74FF9E1223447B9E001E94B2 /* INVPolylineViewController.swift */,
-				D6AFE2A72387AC8500294C40 /* INVRouteViewController.swift */,
-				74FF9E0C23447B9E001E94B2 /* INVCircleViewController.swift */,
-				74FF9E0A23447B9E001E94B2 /* GlobalZIndexViewController.swift */,
-			);
-			name = "셰이프";
-			path = "셰이프";
-			sourceTree = "<group>";
-		};
-		74FF9DFF23447B9E001E94B2 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				74FF9E0023447B9E001E94B2 /* AppDelegate.swift */,
-				74FF9E0123447B9E001E94B2 /* UI Extensions */,
-				74FF9E0423447B9E001E94B2 /* View */,
-				74FF9E0623447B9E001E94B2 /* ViewController */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		74FF9E0123447B9E001E94B2 /* UI Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				74FF9E0223447B9E001E94B2 /* UIActionButton.swift */,
-				74FF9E0323447B9E001E94B2 /* UIInsetLabel.swift */,
+				74A258112FC79EA00066FFFB /* UIActionButton.swift */,
+				74A258122FC79EA00066FFFB /* UIInsetLabel.swift */,
 			);
 			path = "UI Extensions";
 			sourceTree = "<group>";
 		};
-		74FF9E0423447B9E001E94B2 /* View */ = {
+		74A258182FC79EA00066FFFB /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E0523447B9E001E94B2 /* CustomInfoWindowView.xib */,
+				74A258142FC79EA00066FFFB /* CameraEventView.swift */,
+				74A258152FC79EA00066FFFB /* CameraFitBoundsView.swift */,
+				74A258162FC79EA00066FFFB /* CameraMoveView.swift */,
+				74A258172FC79EA00066FFFB /* INVCameraUpdateParamsView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		74A2581B2FC79EA00066FFFB /* ClickEvent */ = {
+			isa = PBXGroup;
+			children = (
+				74A258192FC79EA00066FFFB /* MapClickEventView.swift */,
+				74A2581A2FC79EA00066FFFB /* ShapeClickEventView.swift */,
+			);
+			path = ClickEvent;
+			sourceTree = "<group>";
+		};
+		74A2581D2FC79EA00066FFFB /* Clustering */ = {
+			isa = PBXGroup;
+			children = (
+				74A2581C2FC79EA00066FFFB /* MarkerClusteringView.swift */,
+			);
+			path = Clustering;
+			sourceTree = "<group>";
+		};
+		74A258202FC79EA00066FFFB /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				74A2581E2FC79EA00066FFFB /* LocationIconView.swift */,
+				74A2581F2FC79EA00066FFFB /* UserTrackingModeView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		74A258232FC79EA00066FFFB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				74A258212FC79EA00066FFFB /* MainView.swift */,
+				74A258222FC79EA00066FFFB /* MapDemoView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		74A2582C2FC79EA00066FFFB /* MapOptions */ = {
+			isa = PBXGroup;
+			children = (
+				74A258242FC79EA00066FFFB /* MapControllerView.swift */,
+				74A258252FC79EA00066FFFB /* MapCustomStyleView.swift */,
+				74A258262FC79EA00066FFFB /* MapGestureView.swift */,
+				74A258272FC79EA00066FFFB /* MapLanguageView.swift */,
+				74A258282FC79EA00066FFFB /* MapPaddingView.swift */,
+				74A258292FC79EA00066FFFB /* MapRestrictionView.swift */,
+				74A2582A2FC79EA00066FFFB /* MapSymbolScaleView.swift */,
+				74A2582B2FC79EA00066FFFB /* MapTypeView.swift */,
+			);
+			path = MapOptions;
+			sourceTree = "<group>";
+		};
+		74A258312FC79EA00066FFFB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				74A2582D2FC79EA00066FFFB /* CoordinatesConversionView.swift */,
+				74A2582E2FC79EA00066FFFB /* IndoorMapView.swift */,
+				74A2582F2FC79EA00066FFFB /* PickPoisView.swift */,
+				74A258302FC79EA00066FFFB /* ProjectionView.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		74A2583A2FC79EA00066FFFB /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				74A258322FC79EA00066FFFB /* GlobalZIndexView.swift */,
+				74A258332FC79EA00066FFFB /* INVCircleView.swift */,
+				74A258342FC79EA00066FFFB /* INVInfoWindowView.swift */,
+				74A258352FC79EA00066FFFB /* INVMarkerOverlapView.swift */,
+				74A258362FC79EA00066FFFB /* INVMarkerView.swift */,
+				74A258372FC79EA00066FFFB /* INVPolygonView.swift */,
+				74A258382FC79EA00066FFFB /* INVPolylineView.swift */,
+				74A258392FC79EA00066FFFB /* INVRouteView.swift */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		74A258402FC79EA00066FFFB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				74A2583B2FC79EA00066FFFB /* CustomInfoWindowView.swift */,
+				74A2583C2FC79EA00066FFFB /* CustomInfoWindowView.xib */,
+				74A2583D2FC79EA00066FFFB /* DemoOverlayPanel.swift */,
+				74A2583E2FC79EA00066FFFB /* InaviMapViewRepresentable.swift */,
+				74A2583F2FC79EA00066FFFB /* INVLatLng+Formatted.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		74A258412FC79EA00066FFFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74A258182FC79EA00066FFFB /* Camera */,
+				74A2581B2FC79EA00066FFFB /* ClickEvent */,
+				74A2581D2FC79EA00066FFFB /* Clustering */,
+				74A258202FC79EA00066FFFB /* Location */,
+				74A258232FC79EA00066FFFB /* Main */,
+				74A2582C2FC79EA00066FFFB /* MapOptions */,
+				74A258312FC79EA00066FFFB /* Misc */,
+				74A2583A2FC79EA00066FFFB /* Shape */,
+				74A258402FC79EA00066FFFB /* Shared */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		74FF9E0623447B9E001E94B2 /* ViewController */ = {
+		74A258422FC79EA00066FFFB /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E1323447B9E001E94B2 /* MainViewController.swift */,
-				0338BCD228A4CDC300C8DCE7 /* 셰이프 */,
-				0338BCD128A4CDAB00C8DCE7 /* 클러스터링 */,
-				0338BCD028A4CD6300C8DCE7 /* 카메라 */,
-				0338BCCF28A4CD3100C8DCE7 /* 지도 옵션 */,
-				0338BCCE28A4CD1800C8DCE7 /* 클릭 이벤트 */,
-				0338BCCD28A4CD0100C8DCE7 /* 위치 */,
-				0338BCCB28A4CCCC00C8DCE7 /* 지도 */,
-				0338BCCC28A4CCE900C8DCE7 /* 기타 */,
+				74A2580E2FC79EA00066FFFB /* App */,
+				74A258102FC79EA00066FFFB /* Menu */,
+				74A258132FC79EA00066FFFB /* UI Extensions */,
+				74A258412FC79EA00066FFFB /* View */,
 			);
-			path = ViewController;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		74FF9E3523447BD6001E94B2 /* Storyboard */ = {
+		74A258452FC79EA00066FFFB /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */,
-				74FF9E3823447BD6001E94B2 /* Main.storyboard */,
-				74FF9E3A23447BD6001E94B2 /* Camera.storyboard */,
-				74FF9E3B23447BD6001E94B2 /* ClickEvent.storyboard */,
-				D6F8719E23FA4F0200D87A09 /* Clustering.storyboard */,
-				74FF9E3C23447BD6001E94B2 /* Location.storyboard */,
-				74FF9E3D23447BD6001E94B2 /* MapOptions.storyboard */,
-				74FF9E3E23447BD6001E94B2 /* Misc.storyboard */,
-				74FF9E3F23447BD6001E94B2 /* Shape.storyboard */,
+				74A258442FC79EA00066FFFB /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -280,8 +275,6 @@
 			children = (
 				8ADAD76B22D42A9C00782103 /* App */,
 				8ADAD76A22D42A9C00782103 /* Products */,
-				8FE2E7896B67EB50583E99DE /* Pods */,
-				F432220A0BF6A2D92BC39C81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,33 +289,12 @@
 		8ADAD76B22D42A9C00782103 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				74FF9E3523447BD6001E94B2 /* Storyboard */,
-				74FF9DFF23447B9E001E94B2 /* Source */,
 				8ADAD77322D42A9D00782103 /* Assets.xcassets */,
 				8ADAD77822D42A9D00782103 /* Info.plist */,
+				74A258422FC79EA00066FFFB /* Source */,
+				74A258452FC79EA00066FFFB /* Storyboard */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		8FE2E7896B67EB50583E99DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				420718C55FFCC104EF22E64F /* Pods-inaviMapsApp.debug.xcconfig */,
-				116E12B4A413E57D6FD0F478 /* Pods-inaviMapsApp.release.xcconfig */,
-				5086466D140D0F0F02DD9356 /* Pods-iNaviMapsDemoiOS.debug.xcconfig */,
-				7ACC25794350D8719AD5AFD8 /* Pods-iNaviMapsDemoiOS.release.xcconfig */,
-				5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */,
-				3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		F432220A0BF6A2D92BC39C81 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				38284DCFC4E2511DD5209C5D /* Pods_iNaviMapsDemo.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,11 +304,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ADAD77B22D42A9D00782103 /* Build configuration list for PBXNativeTarget "iNaviMapsDemo" */;
 			buildPhases = (
-				ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */,
 				8ADAD76522D42A9C00782103 /* Sources */,
 				8ADAD76622D42A9C00782103 /* Frameworks */,
 				8ADAD76722D42A9C00782103 /* Resources */,
-				F3E87922A434E54AB77DB5CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +342,9 @@
 				Base,
 			);
 			mainGroup = 8ADAD76022D42A9C00782103;
+			packageReferences = (
+				74A2586F2FC7AA3E0066FFFB /* XCRemoteSwiftPackageReference "inavi-maps-sdk-ios" */,
+			);
 			productRefGroup = 8ADAD76A22D42A9C00782103 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,126 +359,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74FF9E4623447BD6001E94B2 /* Misc.storyboard in Resources */,
-				74FF9E4323447BD6001E94B2 /* ClickEvent.storyboard in Resources */,
-				74FF9E4023447BD6001E94B2 /* LaunchScreen.storyboard in Resources */,
+				74A258462FC79EA00066FFFB /* LaunchScreen.storyboard in Resources */,
+				74A258472FC79EA00066FFFB /* CustomInfoWindowView.xib in Resources */,
 				8ADAD77422D42A9D00782103 /* Assets.xcassets in Resources */,
-				032C1A3128ACDBC10016461E /* MapOptions.storyboard in Resources */,
-				74FF9E1F23447B9E001E94B2 /* CustomInfoWindowView.xib in Resources */,
-				74E5BB1A23CFF68D00987B1F /* Location.storyboard in Resources */,
-				74FF9E4123447BD6001E94B2 /* Main.storyboard in Resources */,
-				74FF9E4723447BD6001E94B2 /* Shape.storyboard in Resources */,
-				74FF9E4223447BD6001E94B2 /* Camera.storyboard in Resources */,
-				D6F8719F23FA4F0200D87A09 /* Clustering.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		ED3DAA58AE85DADA72FFCF3D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iNaviMapsDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3E87922A434E54AB77DB5CB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iNaviMapsDemo/Pods-iNaviMapsDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8ADAD76522D42A9C00782103 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74FF9E2B23447B9E001E94B2 /* INVPolylineViewController.swift in Sources */,
-				74FF9E2623447B9E001E94B2 /* INVInfoWindowViewController.swift in Sources */,
-				74FF9E2A23447B9E001E94B2 /* INVPolygonViewController.swift in Sources */,
-				74FF9E3323447B9E001E94B2 /* ShapeClickEventViewController.swift in Sources */,
-				7410BCF7297928AC001C976C /* PickPoisViewController.swift in Sources */,
-				D6AFE2A82387AC8500294C40 /* INVRouteViewController.swift in Sources */,
-				74FF9E2D23447B9E001E94B2 /* MapClickEventViewController.swift in Sources */,
-				741AD8D82E9D342D00802B45 /* IndoorMapController.swift in Sources */,
-				74FF9E2423447B9E001E94B2 /* INVCameraUpdateParamsViewController.swift in Sources */,
-				74FF9E2823447B9E001E94B2 /* INVMarkerViewController.swift in Sources */,
-				0338BCD428A4CE3000C8DCE7 /* CoordinatesConversionViewController.swift in Sources */,
-				D6F871A123FA50BD00D87A09 /* MarkerClusteringViewController.swift in Sources */,
-				74FF9E2023447B9E001E94B2 /* CameraEventViewController.swift in Sources */,
-				74FF9E3223447B9E001E94B2 /* ProjectionViewController.swift in Sources */,
-				74FF9E2C23447B9E001E94B2 /* MainViewController.swift in Sources */,
-				74FF9E3023447B9E001E94B2 /* MapPaddingViewController.swift in Sources */,
-				74FF9E2723447B9E001E94B2 /* INVMarkerOverlapViewController.swift in Sources */,
-				74FF9E3423447B9E001E94B2 /* UserTrackingModeViewController.swift in Sources */,
-				74FF9E1C23447B9E001E94B2 /* AppDelegate.swift in Sources */,
-				74638BA325BDB1A30057CEEF /* MapSymbolScaleViewController.swift in Sources */,
-				74FF9E2E23447B9E001E94B2 /* MapControllerViewController.swift in Sources */,
-				74FF9E3123447B9E001E94B2 /* MapViewController.swift in Sources */,
-				74FF9E2F23447B9E001E94B2 /* MapGestureViewController.swift in Sources */,
-				74FF9E2223447B9E001E94B2 /* CameraMoveViewController.swift in Sources */,
-				D66FEAF8241608CC005622FE /* MapRestrictionViewController.swift in Sources */,
-				74FF9E1D23447B9E001E94B2 /* UIActionButton.swift in Sources */,
-				7404557B2636B78E0066429F /* MapCustomStyleViewController.swift in Sources */,
-				74FF9E2123447B9E001E94B2 /* CameraFitBoundsViewController.swift in Sources */,
-				74FF9E2523447B9E001E94B2 /* INVCircleViewController.swift in Sources */,
-				74D5298B237C105E00B28E16 /* LocationIconViewController.swift in Sources */,
-				032C1A2F28ACD21D0016461E /* MapTypeViewController.swift in Sources */,
-				74FF9E1E23447B9E001E94B2 /* UIInsetLabel.swift in Sources */,
-				74FF9E2323447B9E001E94B2 /* GlobalZIndexViewController.swift in Sources */,
+				74A258482FC79EA00066FFFB /* MapDemoView.swift in Sources */,
+				74A258492FC79EA00066FFFB /* INVMarkerOverlapView.swift in Sources */,
+				74A2584A2FC79EA00066FFFB /* MapGestureView.swift in Sources */,
+				74A2584B2FC79EA00066FFFB /* MapControllerView.swift in Sources */,
+				74A2584C2FC79EA00066FFFB /* ShapeClickEventView.swift in Sources */,
+				74A2584D2FC79EA00066FFFB /* MainView.swift in Sources */,
+				74A2584E2FC79EA00066FFFB /* MenuModel.swift in Sources */,
+				74A2584F2FC79EA00066FFFB /* INVInfoWindowView.swift in Sources */,
+				74A258502FC79EA00066FFFB /* INVLatLng+Formatted.swift in Sources */,
+				74A258512FC79EA00066FFFB /* iNaviMapsApp.swift in Sources */,
+				74A258522FC79EA00066FFFB /* MarkerClusteringView.swift in Sources */,
+				74A258532FC79EA00066FFFB /* MapCustomStyleView.swift in Sources */,
+				74A258542FC79EA00066FFFB /* CustomInfoWindowView.swift in Sources */,
+				74A258552FC79EA00066FFFB /* INVRouteView.swift in Sources */,
+				74A258562FC79EA00066FFFB /* INVCameraUpdateParamsView.swift in Sources */,
+				74A258572FC79EA00066FFFB /* IndoorMapView.swift in Sources */,
+				74A258582FC79EA00066FFFB /* INVMarkerView.swift in Sources */,
+				74A258592FC79EA00066FFFB /* INVPolylineView.swift in Sources */,
+				74A2585A2FC79EA00066FFFB /* INVPolygonView.swift in Sources */,
+				74A2585B2FC79EA00066FFFB /* INVCircleView.swift in Sources */,
+				74A2585C2FC79EA00066FFFB /* CoordinatesConversionView.swift in Sources */,
+				74A2585D2FC79EA00066FFFB /* CameraEventView.swift in Sources */,
+				74A2585E2FC79EA00066FFFB /* PickPoisView.swift in Sources */,
+				74A2585F2FC79EA00066FFFB /* LocationIconView.swift in Sources */,
+				74A258602FC79EA00066FFFB /* MapSymbolScaleView.swift in Sources */,
+				74A258612FC79EA00066FFFB /* UserTrackingModeView.swift in Sources */,
+				74A258622FC79EA00066FFFB /* InaviMapViewRepresentable.swift in Sources */,
+				74A258632FC79EA00066FFFB /* UIActionButton.swift in Sources */,
+				74A258642FC79EA00066FFFB /* CameraFitBoundsView.swift in Sources */,
+				74A258652FC79EA00066FFFB /* CameraMoveView.swift in Sources */,
+				74A258662FC79EA00066FFFB /* UIInsetLabel.swift in Sources */,
+				74A258672FC79EA00066FFFB /* MapPaddingView.swift in Sources */,
+				74A258682FC79EA00066FFFB /* MapRestrictionView.swift in Sources */,
+				74A258692FC79EA00066FFFB /* GlobalZIndexView.swift in Sources */,
+				74A2586A2FC79EA00066FFFB /* ProjectionView.swift in Sources */,
+				74A2586B2FC79EA00066FFFB /* MapTypeView.swift in Sources */,
+				74A2586C2FC79EA00066FFFB /* MapClickEventView.swift in Sources */,
+				74A2586D2FC79EA00066FFFB /* MapLanguageView.swift in Sources */,
+				74A2586E2FC79EA00066FFFB /* DemoOverlayPanel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		74FF9E3623447BD6001E94B2 /* LaunchScreen.storyboard */ = {
+		74A258442FC79EA00066FFFB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				74FF9E3723447BD6001E94B2 /* Base */,
+				74A258432FC79EA00066FFFB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		74FF9E3823447BD6001E94B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				74FF9E3923447BD6001E94B2 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -629,19 +546,18 @@
 		};
 		8ADAD77C22D42A9D00782103 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E5B3A765E68068B570FB384 /* Pods-iNaviMapsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 50;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.21.1;
+				MARKETING_VERSION = 0.22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
@@ -651,19 +567,18 @@
 		};
 		8ADAD77D22D42A9D00782103 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C7D36BFBD91450C3C731268 /* Pods-iNaviMapsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 49;
+				CURRENT_PROJECT_VERSION = 50;
 				DEVELOPMENT_TEAM = K62H5CQC64;
 				INFOPLIST_FILE = App/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.21.1;
+				MARKETING_VERSION = 0.22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inavi.maps.iosdemo;
 				PRODUCT_NAME = iNaviMapsDemo;
 				SWIFT_VERSION = 5.0;
@@ -693,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		74A2586F2FC7AA3E0066FFFB /* XCRemoteSwiftPackageReference "inavi-maps-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/inavi-systems/inavi-maps-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.21.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		74A258702FC7AA3E0066FFFB /* iNaviMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 74A2586F2FC7AA3E0066FFFB /* XCRemoteSwiftPackageReference "inavi-maps-sdk-ios" */;
+			productName = iNaviMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8ADAD76122D42A9C00782103 /* Project object */;
 }
